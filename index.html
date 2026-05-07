@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rearview | Speed Beyond Limits</title>
+    <meta name="description"
+        content="Experimenta la adrenalina pura en Rearview. El videojuego de carreras definitivo con gráficos de última generación y acción sin límites.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">
+                <img src="isotipo.png" alt="Rearview Isotipo" id="nav-logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#universe" data-i18n="nav-universe">Universe</a></li>
+                <li><a href="drivers.html" data-i18n="nav-drivers">Drivers</a></li>
+                <li><a href="#patch-notes" data-i18n="nav-patch-notes">Patch Notes</a></li>
+                <li class="lang-selector">
+                    <button id="lang-btn" class="lang-btn" aria-label="Change Language">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="current-lang">EN</span>
+                    </button>
+                    <div id="lang-dropdown" class="lang-dropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="es">Español</button>
+                    </div>
+                </li>
+                <li><a href="#" class="btn-primary" data-i18n="nav-play">Jugar Ahora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <img src="logo.png" alt="Rearview Logo" class="hero-logo reveal-text">
+                <p class="reveal-text delay-1" data-i18n="hero-tagline">No mires atrás. La meta está cerca.</p>
+                <div class="hero-actions reveal-text delay-2">
+                    <a href="#" class="btn-primary btn-large" data-i18n="hero-download">Descargar Gratis</a>
+                    <a href="#features" class="btn-secondary btn-large" data-i18n="hero-more">Ver Más</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="section-header">
+                    <div class="racing-stripe"></div>
+                    <h2 class="section-title" data-i18n="features-title">Domina <span class="highlight">la Pista</span>
+                    </h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card reveal-item" data-position="01">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <h3 data-i18n="feat1-h3">Física <span>Realista</span></h3>
+                        <p data-i18n="feat1-p">Siente cada curva y derrape con nuestro motor de física avanzado.</p>
+                        <div class="card-corner"></div>
+                    </div>
+                    <div class="feature-card reveal-item" data-position="02">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 data-i18n="feat2-h3">Multi<span>jugador</span></h3>
+                        <p data-i18n="feat2-p">Compite contra jugadores de todo el mundo en tiempo real.</p>
+                        <div class="card-corner"></div>
+                    </div>
+                    <div class="feature-card reveal-item" data-position="03">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 data-i18n="feat3-h3">Personali<span>zación</span></h3>
+                        <p data-i18n="feat3-p">Modifica tu vehículo hasta el más mínimo detalle.</p>
+                        <div class="card-corner"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section: Join a Faction -->
+        <section class="featured-section featured-left">
+            <div class="featured-content">
+                <div class="featured-text">
+                    <span class="section-number">01</span>
+                    <h2 data-i18n="factions-h2">Join a <span class="highlight">Faction</span></h2>
+                    <h3 data-i18n="factions-h3">Choose Your Side</h3>
+                    <p data-i18n="factions-p">Align with one of three elite racing factions. Each team offers unique
+                        advantages, exclusive
+                        vehicle skins, and special abilities. Compete for dominance and prove your faction's superiority
+                        on the leaderboards.</p>
+                    <a href="#factions" class="btn-primary" data-i18n="factions-btn">EXPLORE FACTIONS</a>
+                </div>
+                <div class="featured-image">
+                    <img src="factions.png" alt="Racing Factions">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section: Meet Your Drivers -->
+        <section class="featured-section featured-right">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="drivers.png" alt="Rearview Drivers">
+                </div>
+                <div class="featured-text">
+                    <span class="section-number">02</span>
+                    <h2 data-i18n="drivers-h2">Meet Your <span class="highlight">Drivers</span></h2>
+                    <h3 data-i18n="drivers-h3">Every Racer Has a Story</h3>
+                    <p data-i18n="drivers-p">Choose from a diverse roster of skilled drivers, each with unique
+                        personalities, backgrounds, and
+                        special racing techniques. Master their abilities and dominate the competition with style.</p>
+                    <a href="#drivers" class="btn-primary" data-i18n="drivers-btn">VIEW ALL DRIVERS</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section: Dive Into the Maps -->
+        <section class="featured-section featured-left">
+            <div class="featured-content">
+                <div class="featured-text">
+                    <span class="section-number">03</span>
+                    <h2 data-i18n="maps-h2">Dive into the <span class="highlight">Maps</span></h2>
+                    <h3 data-i18n="maps-h3">Race Across the World</h3>
+                    <p data-i18n="maps-p">Every track is a battleground designed to test your creativity and skill. From
+                        neon-lit
+                        cityscapes to treacherous mountain passes, each map offers unique challenges and spectacular
+                        moments you'll never forget.</p>
+                    <a href="#maps" class="btn-primary" data-i18n="maps-btn">SEE ALL MAPS</a>
+                </div>
+                <div class="featured-image">
+                    <img src="maps.png" alt="Race Tracks">
+                </div>
+            </div>
+        </section>
+
+        <section id="cta">
+            <div class="container cta-box reveal-item">
+                <h2 data-i18n="cta-h2">¿Listo para el desafío?</h2>
+                <p data-i18n="cta-p">Únete a miles de pilotos y demuestra quién es el rey de la carretera.</p>
+                <a href="#" class="btn-primary btn-large" data-i18n="cta-btn">Únete a la Beta</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Rearview Logo">
+            </div>
+            <p data-i18n="footer-copy">&copy; 2025 Rearview Games. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter" class="social-icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" aria-label="Discord" class="social-icon">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="#" aria-label="YouTube" class="social-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" aria-label="Gamejolt" class="social-icon">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        style="width: 1em; height: 1em;">
+                        <title>Game Jolt</title>
+                        <path
+                            d="M6.353 0v2.824H4.94v2.823H3.53v2.824H2.118v2.823H.706v2.824h8.47v2.823H7.765v2.824H6.353v2.823h1.412v-1.412h1.411v-1.411h1.412v-1.412H12V16.94h1.412v-1.41h1.412v-1.411h1.411v-1.412h1.412v-1.412h1.412V9.882h1.412V8.471h1.411V7.059h-4.235V5.647h1.412V4.235h1.412V2.824h1.411V1.412h1.412V0zm0 22.588H4.94V24h1.412zM7.765 2.824h9.882v1.411h-1.412v1.412h-1.411V7.06h-1.412v1.41H12v1.411h1.412v1.412H12V9.882h-1.412v1.412H9.176V9.882H7.765v1.412H6.353V9.882H4.94V8.471h1.412V5.647h1.412zM6.353 8.47v1.411h1.412v-1.41zm2.823 1.411h1.412v-1.41H9.176zm5.648 0h1.411v1.412h-1.411Z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

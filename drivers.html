@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drivers | Rearview</title>
+    <meta name="description" content="Choose your driver. Dominate the track.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="drivers-page">
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="isotipo.png" alt="Rearview Isotipo" id="nav-logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#universe" data-i18n="nav-universe">Universe</a></li>
+                <li><a href="#" class="active" data-i18n="nav-drivers">Drivers</a></li>
+                <li><a href="index.html#patch-notes" data-i18n="nav-patch-notes">Patch Notes</a></li>
+                <li class="lang-selector">
+                    <button id="lang-btn" class="lang-btn" aria-label="Change Language">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="current-lang">EN</span>
+                    </button>
+                    <div id="lang-dropdown" class="lang-dropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="es">Español</button>
+                    </div>
+                </li>
+                <li><a href="#" class="btn-primary" data-i18n="nav-play">Jugar Ahora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="drivers-hero">
+            <div class="drivers-bg"></div>
+            <div class="container drivers-content">
+                <div class="drivers-header reveal-text">
+                    <div class="header-content">
+                        <div class="brackets-title">
+                            <span class="bracket"></span>
+                            <h1>SELECT YOUR <span class="highlight">DRIVER</span></h1>
+                            <span class="bracket"></span>
+                        </div>
+
+                        <div class="filter-container">
+                            <button id="filter-btn" class="filter-btn">
+                                <i class="fa-solid fa-filter"></i> FILTER
+                            </button>
+                            <div id="filter-dropdown" class="filter-dropdown">
+                                <button class="filter-option" data-sort="role">BY ROLE</button>
+                                <button class="filter-option" data-sort="az">A-Z</button>
+                                <button class="filter-option" data-sort="za">Z-A</button>
+                                <button class="filter-option" data-sort="random">RANDOM</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="subtitle fade-in-up delay-1">THE ASPHALT AWAITS YOUR LEGACY</p>
+                </div>
+
+                <div class="drivers-grid reveal-item delay-2" id="drivers-grid">
+                    <div class="driver-card" data-driver="breakway" data-role="DPS" data-name="Breakway">
+                        <div class="driver-image" style="background-image: url('breakway.png');"></div>
+                        <div class="role-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                        <div class="driver-info">
+                            <h3>Breakway</h3>
+                        </div>
+                    </div>
+                    <div class="driver-card" data-driver="sneaky" data-role="DPS" data-name="Sneaky">
+                        <div class="driver-image" style="background-image: url('sneaky.png');"></div>
+                        <div class="role-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                        <div class="driver-info">
+                            <h3>Sneaky</h3>
+                        </div>
+                    </div>
+                    <div class="driver-card" data-driver="deadloader" data-role="Tank" data-name="Deadloader">
+                        <div class="driver-image" style="background-image: url('deadloader.png');"></div>
+                        <div class="role-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="driver-info">
+                            <h3>Deadloader</h3>
+                        </div>
+                    </div>
+                    <div class="driver-card" data-driver="juggernaut" data-role="Tank" data-name="Juggernaut">
+                        <div class="driver-image" style="background-image: url('juggernaut.png');"></div>
+                        <div class="role-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="driver-info">
+                            <h3>Juggernaut</h3>
+                        </div>
+                    </div>
+                    <div class="driver-card" data-driver="sprayer" data-role="Support" data-name="Sprayer">
+                        <div class="driver-image" style="background-image: url('sprayer.png');"></div>
+                        <div class="role-icon"><i class="fa-solid fa-plus"></i></div>
+                        <div class="driver-info">
+                            <h3>Sprayer</h3>
+                        </div>
+                    </div>
+                    <div class="driver-card" data-driver="welfare" data-role="Support" data-name="Welfare">
+                        <div class="driver-image" style="background-image: url('welfare.png');"></div>
+                        <div class="role-icon"><i class="fa-solid fa-plus"></i></div>
+                        <div class="driver-info">
+                            <h3>Welfare</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="driver-stats-container">
+                    <!-- Dynamic stats could go here later -->
+                </div>
+
+                <!-- Driver Details Overlay -->
+                <div id="driver-overlay" class="driver-overlay">
+                    <button class="close-overlay-btn"><i class="fa-solid fa-xmark"></i></button>
+
+                    <div class="overlay-content">
+                        <div class="char-image-section">
+                            <img id="overlay-image" src="" alt="Driver Portrait">
+                        </div>
+
+                        <div class="char-info-section">
+                            <div class="char-header">
+                                <h1 id="overlay-name">NAME</h1>
+                                <h2 id="overlay-realname">REAL NAME</h2>
+                            </div>
+
+                            <div class="char-tags">
+                                <div class="char-tag">
+                                    <span class="tag-label">ROLE:</span>
+                                    <span id="overlay-role" class="tag-value">DPS</span>
+                                </div>
+                                <div class="char-tag">
+                                    <span class="tag-label">ORIGIN:</span>
+                                    <span id="overlay-origin" class="tag-value">UNKNOWN</span>
+                                </div>
+                            </div>
+
+                            <p id="overlay-bio" class="char-bio">
+                                Character bio goes here...
+                            </p>
+
+                            <div class="char-stats">
+                                <h3>DRIVER STATS</h3>
+                                <div class="stat-row">
+                                    <span class="stat-label">SPEED</span>
+                                    <div class="stat-bar-container">
+                                        <div class="stat-bar" id="stat-speed" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label">DEFENSE</span>
+                                    <div class="stat-bar-container">
+                                        <div class="stat-bar" id="stat-defense" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                                <div class="stat-row">
+                                    <span class="stat-label">UTILITY</span>
+                                    <div class="stat-bar-container">
+                                        <div class="stat-bar" id="stat-utility" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="char-actions">
+                                <button class="action-btn primary-btn" id="view-vehicle-btn">
+                                    <i class="fa-solid fa-car"></i> VIEW VEHICLE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Rearview Logo">
+            </div>
+            <p data-i18n="footer-copy">&copy; 2025 Rearview Games. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Twitter" class="social-icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#" aria-label="Discord" class="social-icon">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="#" aria-label="YouTube" class="social-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#" aria-label="Instagram" class="social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
