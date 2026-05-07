@@ -67,7 +67,6 @@ nav {
 
 .logo img {
     height: 50px;
-    filter: drop-shadow(0 0 10px var(--accent-glow));
 }
 
 
@@ -298,7 +297,7 @@ nav {
     max-width: 500px;
     width: 80%;
     margin-bottom: 1.5rem;
-    filter: drop-shadow(0 0 30px var(--accent-glow)) drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, 0.3));
 }
 
 .hero-content p {
@@ -953,7 +952,6 @@ footer {
 .filter-btn:hover {
     background: var(--accent-color);
     color: var(--text-primary);
-    box-shadow: 0 0 15px var(--accent-glow);
 }
 
 .filter-dropdown {
