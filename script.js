@@ -31,8 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (!href || href === '#') return;
+
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
                 target.scrollIntoView({
                     behavior: 'smooth'
@@ -43,12 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Parallax effect for hero
     const hero = document.getElementById('hero');
-    window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY;
-        if (scrolled < window.innerHeight) {
-            hero.style.backgroundPositionY = (scrolled * 0.5) + 'px';
-        }
-    });
+    if (hero) {
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            if (scrolled < window.innerHeight) {
+                hero.style.backgroundPositionY = (scrolled * 0.5) + 'px';
+            }
+        });
+    }
 
     // Initial reveal for hero content (since it's at the top)
     setTimeout(() => {
@@ -63,16 +68,16 @@ document.addEventListener('DOMContentLoaded', () => {
             "nav-drivers": "Drivers",
             "nav-patch-notes": "Patch Notes",
             "nav-play": "Play Now",
-            "hero-tagline": "Don't look back. The finish line is near.",
+            "hero-tagline": "TEAM ACTION • FREE",
             "hero-download": "Download Free",
             "hero-more": "See More",
             "features-title": "Master <span class=\"highlight\">the Track</span>",
-            "feat1-h3": "Realistic <span>Physics</span>",
-            "feat1-p": "Feel every curve and drift with our advanced physics engine.",
-            "feat2-h3": "Multi<span>player</span>",
-            "feat2-p": "Compete against players worldwide in real-time.",
-            "feat3-h3": "Customi<span>zation</span>",
-            "feat3-p": "Modify your vehicle down to the smallest detail.",
+            "feat1-h3": "Arcade <span>Physics</span>",
+            "feat1-p": "Drive on the edge with instant controls, exaggerated drifts, and races that are easy to learn but hard to master.",
+            "feat2-h3": "Frenetic <span>Matches</span>",
+            "feat2-p": "Every race mixes speed, collisions, and fast decisions to keep the action burning hot.",
+            "feat3-h3": "Charismatic <span>Characters</span>",
+            "feat3-p": "Choose drivers with distinct personalities, recognizable styles, and an attitude ready to ignite the track.",
             "factions-h2": "Join a <span class=\"highlight\">Faction</span>",
             "factions-h3": "Choose Your Side",
             "factions-p": "Align with one of three elite racing factions. Each team offers unique advantages, exclusive vehicle skins, and special abilities. Compete for dominance and prove your faction's superiority on the leaderboards.",
@@ -85,6 +90,40 @@ document.addEventListener('DOMContentLoaded', () => {
             "maps-h3": "Race Across the World",
             "maps-p": "Every track is a battleground designed to test your creativity and skill. From neon-lit cityscapes to treacherous mountain passes, each map offers unique challenges and spectacular moments you'll never forget.",
             "maps-btn": "SEE ALL MAPS",
+            "patch-eyebrow": "Updates",
+            "latest-patch-title": "Latest <span class=\"highlight\">Notes</span>",
+            "patch-title": "Patch <span class=\"highlight\">Notes</span>",
+            "patch-view-all": "View all",
+            "patch-back-home": "Back home",
+            "patch-feature-type": "Season 01",
+            "patch-feature-title": "The rebel offensive begins",
+            "patch-feature-copy": "New urban routes, arcade drift tuning, and improvements to the pace of team matches.",
+            "patch-feature-date": "May 7, 2026",
+            "patch-read-more": "Read more",
+            "patch-card1-type": "Balance",
+            "patch-card1-title": "More agile drivers in combat",
+            "patch-card1-copy": "We reduced recovery after impacts and increased response through tight turns.",
+            "patch-card1-date": "May 2, 2026",
+            "patch-card2-type": "Map",
+            "patch-card2-title": "Central District gets shortcuts",
+            "patch-card2-copy": "Side access points are now open for more aggressive chases and last-second comebacks.",
+            "patch-card2-date": "April 25, 2026",
+            "patch-card3-type": "System",
+            "patch-card3-title": "Squad rewards",
+            "patch-card3-copy": "Assists, blocks, and shared objectives now grant more progress for the whole team.",
+            "patch-card3-date": "April 18, 2026",
+            "patch-card4-type": "Event",
+            "patch-card4-title": "Operation Blackout",
+            "patch-card4-copy": "A limited-time mode focused on quick sabotages, escorts, and coordinated escapes.",
+            "patch-card4-date": "April 11, 2026",
+            "patch-card5-type": "Vehicles",
+            "patch-card5-title": "Light chassis upgrades",
+            "patch-card5-copy": "We increased aerial stability and reduced speed loss after landing.",
+            "patch-card5-date": "April 4, 2026",
+            "patch-card6-type": "Quality of life",
+            "patch-card6-title": "Clearer combat readability",
+            "patch-card6-copy": "New visual alerts help identify attacks, assists, and active objectives.",
+            "patch-card6-date": "March 28, 2026",
             "cta-h2": "Ready for the challenge?",
             "cta-p": "Join thousands of drivers and prove who is the king of the road.",
             "cta-btn": "Join the Beta",
@@ -95,16 +134,16 @@ document.addEventListener('DOMContentLoaded', () => {
             "nav-drivers": "Pilotos",
             "nav-patch-notes": "Notas del Parche",
             "nav-play": "Jugar Ahora",
-            "hero-tagline": "No mires atrás. La meta está cerca.",
+            "hero-tagline": "ACCION EN EQUIPO • GRATIS",
             "hero-download": "Descargar Gratis",
             "hero-more": "Ver Más",
             "features-title": "Domina <span class=\"highlight\">la Pista</span>",
-            "feat1-h3": "Física <span>Realista</span>",
-            "feat1-p": "Siente cada curva y derrape con nuestro motor de física avanzado.",
-            "feat2-h3": "Multi<span>jugador</span>",
-            "feat2-p": "Compite contra jugadores de todo el mundo en tiempo real.",
-            "feat3-h3": "Personali<span>zación</span>",
-            "feat3-p": "Modifica tu vehículo hasta el más mínimo detalle.",
+            "feat1-h3": "Fisica <span>Arcade</span>",
+            "feat1-p": "Conduce al limite con controles inmediatos, derrapes exagerados y carreras faciles de aprender pero dificiles de dominar.",
+            "feat2-h3": "Partidas <span>Freneticas</span>",
+            "feat2-p": "Cada carrera mezcla velocidad, choques y decisiones rapidas para mantener la accion siempre al rojo vivo.",
+            "feat3-h3": "Personajes <span>Carismaticos</span>",
+            "feat3-p": "Elige pilotos con personalidad propia, estilos reconocibles y una actitud lista para encender la pista.",
             "factions-h2": "Únete a una <span class=\"highlight\">Facción</span>",
             "factions-h3": "Elige Tu Bando",
             "factions-p": "Alíate con una de las tres facciones de élite. Cada equipo ofrece ventajas únicas, diseños de vehículos exclusivos y habilidades especiales. Compite por el dominio y demuestra la superioridad de tu facción.",
@@ -117,6 +156,40 @@ document.addEventListener('DOMContentLoaded', () => {
             "maps-h3": "Compite por todo el Mundo",
             "maps-p": "Cada pista es un campo de batalla diseñado para poner a prueba tu creatividad y destreza. Desde ciudades con luces de neón hasta peligrosos pasos de montaña, cada mapa ofrece desafíos únicos.",
             "maps-btn": "VER TODOS LOS MAPAS",
+            "patch-eyebrow": "Actualizaciones",
+            "latest-patch-title": "Últimas <span class=\"highlight\">Notas</span>",
+            "patch-title": "Notas de <span class=\"highlight\">Parche</span>",
+            "patch-view-all": "Ver todas",
+            "patch-back-home": "Volver al inicio",
+            "patch-feature-type": "Temporada 01",
+            "patch-feature-title": "Comienza la ofensiva rebelde",
+            "patch-feature-copy": "Nuevas rutas urbanas, ajustes al derrape arcade y mejoras al ritmo de las partidas por equipos.",
+            "patch-feature-date": "7 de mayo de 2026",
+            "patch-read-more": "Leer más",
+            "patch-card1-type": "Balance",
+            "patch-card1-title": "Pilotos más ágiles en combate",
+            "patch-card1-copy": "Reducimos la recuperación tras impactos y aumentamos la respuesta en giros cerrados.",
+            "patch-card1-date": "2 de mayo de 2026",
+            "patch-card2-type": "Mapa",
+            "patch-card2-title": "Distrito Central recibe atajos",
+            "patch-card2-copy": "Se abren accesos laterales para persecuciones más agresivas y remontadas de último segundo.",
+            "patch-card2-date": "25 de abril de 2026",
+            "patch-card3-type": "Sistema",
+            "patch-card3-title": "Recompensas de escuadrón",
+            "patch-card3-copy": "Las asistencias, bloqueos y objetivos compartidos ahora suman más progreso para todo el equipo.",
+            "patch-card3-date": "18 de abril de 2026",
+            "patch-card4-type": "Evento",
+            "patch-card4-title": "Operación Corte de Luz",
+            "patch-card4-copy": "Un modo temporal enfocado en sabotajes rápidos, escoltas y escapes coordinados.",
+            "patch-card4-date": "11 de abril de 2026",
+            "patch-card5-type": "Vehículos",
+            "patch-card5-title": "Mejoras al chasis ligero",
+            "patch-card5-copy": "Aumentamos estabilidad aérea y reducimos la pérdida de velocidad al aterrizar.",
+            "patch-card5-date": "4 de abril de 2026",
+            "patch-card6-type": "Calidad de vida",
+            "patch-card6-title": "Lectura más clara del combate",
+            "patch-card6-copy": "Nuevos avisos visuales ayudan a identificar ataques, asistencias y objetivos activos.",
+            "patch-card6-date": "28 de marzo de 2026",
             "cta-h2": "¿Listo para el desafío?",
             "cta-p": "Únete a miles de pilotos y demuestra quién es el rey de la carretera.",
             "cta-btn": "Únete a la Beta",
