@@ -226,7 +226,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Update document lang attribute
         document.documentElement.lang = lang;
+
+        renderPatchNotesFeed();
     };
+
+    let patchNotesFeed = null;
+
+    const setText = (root, selector, value) => {
+        const element = root.querySelector(selector);
+        if (element && value) {
+            element.textContent = value;
+        }
+    };
+
+    const renderPatchCard = (card, note) => {
+        if (!card || !note) return;
+        setText(card, '.patch-type', note.type);
+        setText(card, 'h3', note.title);
+        setText(card, 'p', note.summary);
+        setText(card, 'time', note.date);
+    };
+
+    function renderPatchNotesFeed() {
+        if (!patchNotesFeed || !Array.isArray(patchNotesFeed.items) || patchNotesFeed.items.length === 0) {
+            return;
+        }
+
+        const items = patchNotesFeed.items;
+        const feature = document.querySelector('.patch-feature');
+        if (feature && items[0]) {
+            setText(feature, '.patch-type', items[0].type);
+            setText(feature, 'h2, h3', items[0].title);
+            setText(feature, 'p', items[0].summary);
+            setText(feature, '.patch-meta span', items[0].date);
+        }
+
+        document.querySelectorAll('#latest-patches .patch-grid').forEach(grid => {
+            const cards = Array.from(grid.querySelectorAll('.patch-card'));
+            items.slice(1, 4).forEach((note, index) => renderPatchCard(cards[index], note));
+        });
+
+        document.querySelectorAll('#patch-notes .patch-grid').forEach(grid => {
+            const cards = Array.from(grid.querySelectorAll('.patch-card'));
+            items.slice(1, 7).forEach((note, index) => renderPatchCard(cards[index], note));
+        });
+    }
 
     // Event listeners for options
     langOptions.forEach(option => {
@@ -247,6 +291,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize language
     setLanguage(getBestLanguage());
+
+    if (document.querySelector('#latest-patches, #patch-notes')) {
+        fetch('patch-notes.json', { cache: 'no-store' })
+            .then(response => response.ok ? response.json() : null)
+            .then(data => {
+                if (!data) return;
+                patchNotesFeed = data;
+                renderPatchNotesFeed();
+            })
+            .catch(() => {
+                // Static fallback content remains visible if the feed cannot be loaded.
+            });
+    }
 
     // --- Filter System Logic ---
     const filterBtn = document.getElementById('filter-btn');
