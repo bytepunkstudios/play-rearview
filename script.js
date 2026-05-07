@@ -304,7 +304,129 @@ document.addEventListener('DOMContentLoaded', () => {
             "detail-makoto-li3": "Maniobrabilidad superior.",
             "detail-makoto-li4": "Mayor riesgo en enfrentamientos directos.",
             "detail-vehicles-p2": "La llegada de motocicletas abre nuevas posibilidades para futuras mecanicas y estilos de juego."
+        },
+        ja: {
+            "nav-universe": "ユニバース",
+            "nav-drivers": "ドライバー",
+            "nav-patch-notes": "パッチノート",
+            "nav-play": "今すぐプレイ",
+            "hero-tagline": "チームアクション • 無料",
+            "hero-download": "無料でダウンロード",
+            "hero-more": "詳細を見る",
+            "features-title": "<span class=\"highlight\">コース</span>を制覇せよ",
+            "feat1-h3": "アーケード <span>物理演算</span>",
+            "feat1-p": "限界まで走り抜け。直感的な操作、ダイナミックなドリフト、初心者でも覚えやすく、極めるのは難しいレース。",
+            "feat2-h3": "熱狂的な <span>マッチ</span>",
+            "feat2-p": "すべてのレースがスピード、衝突、そして素早い決断の連続。アクションの熱気が途切れることはない。",
+            "feat3-h3": "個性豊かな <span>キャラクター</span>",
+            "feat3-p": "独自の性格、特徴的なスタイル、そしてコースを沸かせる熱い志を持ったドライバーたちを選べ。",
+            "factions-h2": "<span class=\"highlight\">派閥</span>に参加せよ",
+            "factions-h3": "自分の陣営を選べ",
+            "factions-p": "3つのエリートレース派閥のいずれかと提携せよ。各チームは独自の利点、限定車両スキン、特殊能力を提供。支配権を争い、リーダーボードで派閥の優位性を証明せよ。",
+            "factions-btn": "派閥を探索する",
+            "drivers-h2": "<span class=\"highlight\">ドライバー</span>紹介",
+            "drivers-h3": "すべてのレーサーには物語がある",
+            "drivers-p": "独自の性格、背景、特殊なレーステクニックを持つ多様な熟練ドライバーから選べ。彼らの能力をマスターし、スタイリッシュに競争を支配せよ。",
+            "drivers-btn": "すべてのドライバーを見る",
+            "maps-h2": "<span class=\"highlight\">マップ</span>を走破せよ",
+            "maps-h3": "世界中を駆け巡るレース",
+            "maps-p": "すべてのトラックは、君の創造性とスキルを試す戦場だ。ネオン輝く街並みから険しい峠まで、各マップは忘れられないユニークな挑戦と壮大な瞬間を提供する。",
+            "maps-btn": "すべてのマップを見る",
+            "patch-eyebrow": "アップデート",
+            "latest-patch-title": "最新の <span class=\"highlight\">ノート</span>",
+            "patch-title": "パッチ <span class=\"highlight\">ノート</span>",
+            "patch-view-all": "すべて見る",
+            "patch-back-home": "ホームに戻る",
+            "patch-feature-type": "BETA DEVELOPMENT",
+            "patch-feature-title": "進化し続けるベータ",
+            "patch-feature-copy": "新しいメカニクス、ゲームプレイの改善、そして将来の拡張に向けた土台を作るコンテンツ。",
+            "patch-feature-date": "2026年5月7日",
+            "patch-read-more": "続きを読む",
+            "patch-card1-type": "マップ",
+            "patch-card1-title": "サミットバレー",
+            "patch-card1-copy": "別ルート、転送ポータル、そしてよりダイナミックな戦闘を備えた廃墟の郊外。",
+            "patch-card1-date": "2026年5月7日",
+            "patch-card2-type": "バランス",
+            "patch-card2-title": "戦闘中の機動性が向上",
+            "patch-card2-copy": "激しい戦闘状況下でのドライビング、レスポンス、安定性、および制御の改善。",
+            "patch-card2-date": "2026年5月7日",
+            "patch-card3-type": "システム",
+            "patch-card3-title": "ミニアビリティ",
+            "patch-card3-copy": "状況に応じてShockとShieldを使い分け、戦闘の結果を変えよう。",
+            "patch-card3-date": "2026年5月7日",
+            "patch-card4-type": "車両",
+            "patch-card4-title": "Makotoが参戦",
+            "patch-card4-copy": "ビジュアルの改善、ドライバーの最適化、そして初のオートバイ「Makoto」が登場。",
+            "patch-card4-date": "2026年5月7日",
+            "patch-card5-type": "車両",
+            "patch-card5-title": "軽量シャシーのアップグレード",
+            "patch-card5-copy": "空中安定性を向上させ、着地後の速度低下を軽減しました。",
+            "patch-card5-date": "2026年4月4日",
+            "patch-card6-type": "クオリティ・オブ・ライフ",
+            "patch-card6-title": "戦闘の視認性を向上",
+            "patch-card6-copy": "攻撃、アシスト、アクティブな目標を識別しやすくする新しい視覚アラート。",
+            "patch-card6-date": "2026年3月28日",
+            "cta-h2": "挑戦する準備はできているか？",
+            "cta-p": "何千人ものドライバーと一緒に、誰が道の王であるかを証明せよ。",
+            "cta-btn": "ベータに参加する",
+            "footer-copy": "&copy; 2025 Rearview Games. All rights reserved.",
+            "detail-back": "パッチノート",
+            "detail-hero-title": "進化し続けるベータ",
+            "detail-hero-copy": "ベータは新しいメカニクス、ゲームプレイの改善、そして多くの新しいコンテンツとともに成長し、進化し続けています。",
+            "detail-nav-overview": "概要",
+            "detail-nav-balance": "バランス",
+            "detail-nav-abilities": "ミニアビリティ",
+            "detail-nav-vehicles": "車両",
+            "detail-overview-p": "このアップデートでは、戦闘、機動性、探索に重要な変更を加え、将来の拡張に向けた準備を整えています。",
+            "detail-new-map": "新マップ",
+            "detail-summit-p1": "サミットバレーへようこそ。反乱軍が外部と接触する最初の拠点です。",
+            "detail-summit-p2": "広大な廃墟の郊外を舞台にしたこの新マップは、より広いスペース、代替ルート、そして非常に激しくダイナミックな戦闘に焦点を当てています。",
+            "detail-main-news": "主な追加内容",
+            "detail-summit-li1": "マップ内の各エリアに配置された破壊可能なオブジェクト。",
+            "detail-summit-li2": "戦略的ポイント間を素早く移動できる転送ポータル。",
+            "detail-summit-li3": "マッチの没入感を高める新しい環境要素。",
+            "detail-summit-li4": "戦闘のペース調整と紛争地帯の配置改善。",
+            "detail-summit-li5": "アグレッシブまたはタクティカルなプレイヤー向けの新しい高台とセカンダリルート。",
+            "detail-summit-li6": "ステージの視覚的アイデンティティを強化するための照明と環境効果の調整。",
+            "detail-summit-p3": "サミットバレーはゲームの新しいステージの始まりであり、今後のテストやイベントのメイン設定となります。",
+"detail-map-quote": "混沌が眠ることのない廃墟の郊外。",
+            "detail-map-p1": "都市への封鎖された道路により、サミットバレーはすべてのマッチが完全に異なる方法で展開される予測不能なゾーンとなります。",
+            "detail-map-p2": "マップは素早い戦闘と長い追跡の両方に対応するように設計されており、プレイヤーはいつでもショートカット、カバー、逃走ルートを利用できます。",
+            "detail-map-p3": "新しい環境の詳細とインタラクティブな構造により、マッチ中の空間がより生き生きとダイナミックに感じられるようになりました。",
+            "detail-balance-p1": "車両のハンドリングとレスポンスに複数の改善を加え、よりスムーズで速く、満足度の高い体験を実現しました。",
+            "detail-main-changes": "主な変更点",
+            "detail-balance-li1": "急カーブでのレスポンス向上。",
+            "detail-balance-li2": "より自然な加速感。",
+            "detail-balance-li3": "衝撃や衝突時の安定性調整。",
+            "detail-balance-li4": "激しい戦闘状況での車両制御性の向上。",
+            "detail-balance-li5": "スピード、ブレーキ、ドリフト間のよりスムーズな遷移。",
+            "detail-balance-p2": "目標は、すべての戦闘をよりダイナミックで競争力のある、楽しいものにすることです。",
+            "detail-abilities-p1": "ミニアビリティは、各マッチに戦略的多様性を加えるために設計されたシステムとして登場します。",
+            "detail-abilities-p2": "マッチ開始前に、プレイヤーは状況に応じて戦闘の結果を変えることができる2つの特殊能力から1つを選択できるようになります。",
+            "detail-shock-p": "近くの敵を一時的に麻痺させ、機動性を低下させて数秒間無防備にする近距離放電。",
+            "detail-ideal-for": "次のような場面に最適です：",
+            "detail-shock-li1": "待ち伏せ。",
+            "detail-shock-li2": "追跡の阻止。",
+            "detail-shock-li3": "アグレッシブな攻撃の開始。",
+            "detail-shield-p": "車両が受けるダメージの一部を短時間ブロックする一時的なシールドを生成します。",
+            "detail-shield-li1": "危険な状況からの脱出。",
+            "detail-shield-li2": "敵の攻撃への抵抗。",
+            "detail-shield-li3": "激しい戦闘での生存。",
+            "detail-abilities-p3": "このシステムは、今後のアップデートで新しい能力や追加の改善とともに拡張され続けます。",
+            "detail-vehicles-title": "車両のアップデート",
+            "detail-vehicles-p1": "いくつかの車両に視覚的および最適化の改善を加え、ゲームに新しいカテゴリーを追加しました。",
+            "detail-changes-made": "加えられた変更",
+            "detail-vehicles-li1": "Sprayerのモデルがより軽くスタイリッシュになり、外観と全体的なパフォーマンスの両方が向上しました。",
+            "detail-vehicles-li2": "Breakwayは、マッチ中の安定性とパフォーマンスを向上させるために、より最適化されたバージョンに置き換えられました。",
+            "detail-vehicles-li3": "ゲーム初のオートバイとしてMakotoが追加されました。",
+            "detail-makoto-p": "Makotoは、以下に焦点を当てた全く異なるドライビングスタイルを導入します：",
+            "detail-makoto-li1": "より高いスピード。",
+            "detail-makoto-li2": "よりアグレッシブな機動性。",
+            "detail-makoto-li3": "優れた操作性。",
+            "detail-makoto-li4": "直接戦闘における高いリスク。",
+            "detail-vehicles-p2": "オートバイの登場は、将来のメカニクスやプレイスタイルの新しい可能性を切り開きます。"
         }
+
     };
 
     const langBtn = document.getElementById('lang-btn');
@@ -324,128 +446,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     let activeLang = 'en';
-
-    const setLanguage = (lang) => {
-        activeLang = translations[lang] ? lang : 'en';
-        localStorage.setItem('preferredLang', activeLang);
-        currentLangText.textContent = activeLang.toUpperCase();
-
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (translations[activeLang] && translations[activeLang][key]) {
-                el.innerHTML = translations[activeLang][key];
-            }
-        });
-
-        // Update document lang attribute
-        document.documentElement.lang = activeLang;
-
-        renderPatchNotesFeed();
-    };
-
-    let patchNotesFeed = null;
-
-    const setText = (root, selector, value) => {
-        const element = root.querySelector(selector);
-        if (element && value) {
-            element.textContent = value;
-        }
-    };
-
-    const localizePatchNote = (note) => {
-        if (activeLang !== 'en') return note;
-        return {
-            ...note,
-            type: note.type_en || note.type,
-            title: note.title_en || note.title,
-            date: note.date_en || note.date,
-            summary: note.summary_en || note.summary
-        };
-    };
-
-    const renderPatchCard = (card, note) => {
-        if (!card || !note) return;
-        if (note.url) {
-            card.dataset.patchUrl = note.url;
-        }
-        setText(card, '.patch-type', note.type);
-        setText(card, 'h3', note.title);
-        setText(card, 'p', note.summary);
-        setText(card, 'time', note.date);
-    };
-
-    function renderPatchNotesFeed() {
-        if (!patchNotesFeed || !Array.isArray(patchNotesFeed.items) || patchNotesFeed.items.length === 0) {
-            return;
-        }
-
-        const items = patchNotesFeed.items.map(localizePatchNote);
-        const feature = document.querySelector('.patch-feature');
-        if (feature && items[0]) {
-            const featureImage = feature.querySelector('.patch-feature-media img');
-            if (featureImage && items[0].image) {
-                featureImage.src = items[0].image;
-            }
-            if (items[0].url) {
-                feature.dataset.patchUrl = items[0].url;
-                const readMore = feature.querySelector('.patch-meta a');
-                if (readMore) readMore.href = items[0].url;
-            }
-            setText(feature, '.patch-type', items[0].type);
-            setText(feature, 'h2, h3', items[0].title);
-            setText(feature, 'p', items[0].summary);
-            setText(feature, '.patch-meta span', items[0].date);
-        }
-
-        document.querySelectorAll('#latest-patches .patch-grid').forEach(grid => {
-            const cards = Array.from(grid.querySelectorAll('.patch-card'));
-            items.slice(1, 4).forEach((note, index) => renderPatchCard(cards[index], note));
-        });
-
-        document.querySelectorAll('#patch-notes .patch-grid').forEach(grid => {
-            const cards = Array.from(grid.querySelectorAll('.patch-card'));
-            items.slice(1, 7).forEach((note, index) => renderPatchCard(cards[index], note));
-        });
-    }
-
-    document.addEventListener('click', (event) => {
-        const patchItem = event.target.closest('[data-patch-url]');
-        if (!patchItem || event.target.closest('a')) return;
-        window.location.href = patchItem.dataset.patchUrl;
-    });
-
-    // Event listeners for options
-    langOptions.forEach(option => {
-        option.addEventListener('click', () => {
-            const lang = option.getAttribute('data-lang');
-            setLanguage(lang);
-        });
-    });
-
-    // Detect language
-    const getBestLanguage = () => {
-        const saved = localStorage.getItem('preferredLang');
-        if (saved) return saved;
-
-        const browserLang = navigator.language.split('-')[0];
-        return translations[browserLang] ? browserLang : 'en';
-    };
-
-    // Initialize language
-    setLanguage(getBestLanguage());
-
-    if (document.querySelector('#latest-patches, #patch-notes')) {
-        fetch('patch-notes.json', { cache: 'no-store' })
-            .then(response => response.ok ? response.json() : null)
-            .then(data => {
-                if (!data) return;
-                patchNotesFeed = data;
-                renderPatchNotesFeed();
-            })
-            .catch(() => {
-                // Static fallback content remains visible if the feed cannot be loaded.
-            });
-    }
 
     // --- Filter System Logic ---
     const filterBtn = document.getElementById('filter-btn');
@@ -534,14 +534,12 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             for (const [role, cards] of Object.entries(roles)) {
-                // Create Separator
                 const separator = document.createElement('div');
                 separator.className = 'role-separator reveal-item';
                 separator.innerHTML = `<h2>${role}</h2>`;
-                separator.style.gridColumn = '1 / -1'; // Ensure it spans full width
+                separator.style.gridColumn = '1 / -1';
                 driversGrid.appendChild(separator);
 
-                // Append Cards
                 cards.forEach((card, index) => {
                     card.classList.remove('reveal-item');
                     void card.offsetWidth;
@@ -553,25 +551,129 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- Driver Overlay Logic ---
-    const driversData = {
-        'breakway': {
-            realName: "KAITO TANAKA",
-            alias: "BREAKWAY",
-            role: "DPS",
-            origin: "NEO-TOKYO",
-            bio: "A former street racer who dominates the asphalt with calculated aggression. Known for his high-risk, high-reward drifting style that leaves opponents in the dust.",
-            stats: { speed: 95, defense: 40, utility: 60 },
-            image: "breakway.png"
-        },
-        'sneaky': {
-            realName: "SARAH JENKINS",
-            alias: "SNEAKY",
-            role: "DPS",
-            origin: "CHICAGO",
-            bio: "A master of stealth and precision. She strikes when least expected, using the track's blind spots to her advantage to overtake rivals instantly.",
-            stats: { speed: 90, defense: 30, utility: 80 },
-            image: "sneaky.png"
+    const setLanguage = (lang) => {
+        activeLang = translations[lang] ? lang : 'en';
+        localStorage.setItem('preferredLang', activeLang);
+        currentLangText.textContent = activeLang.toUpperCase();
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[activeLang] && translations[activeLang][key]) {
+                el.innerHTML = translations[activeLang][key];
+            }
+        });
+
+        document.documentElement.lang = activeLang;
+        renderPatchNotesFeed();
+    };
+
+    let patchNotesFeed = null;
+
+    const setText = (root, selector, value) => {
+        const element = root.querySelector(selector);
+        if (element && value) {
+            element.textContent = value;
+        }
+    };
+
+    const localizePatchNote = (note) => {
+        if (activeLang === 'en') {
+            return {
+                ...note,
+                type: note.type_en || note.type,
+                title: note.title_en || note.title,
+                date: note.date_en || note.date,
+                summary: note.summary_en || note.summary
+            };
+        }
+        if (activeLang === 'ja') {
+            return {
+                ...note,
+                type: note.type_ja || note.type,
+                title: note.title_ja || note.title,
+                date: note.date_ja || note.date,
+                summary: note.summary_ja || note.summary
+            };
+        }
+        return note;
+    };
+
+    const renderPatchCard = (card, note) => {
+        if (!card || !note) return;
+        if (note.url) {
+            card.dataset.patchUrl = note.url;
+        }
+        setText(card, '.patch-type', note.type);
+        setText(card, 'h3', note.title);
+        setText(card, 'p', note.summary);
+        setText(card, 'time', note.date);
+    };
+
+    function renderPatchNotesFeed() {
+        if (!patchNotesFeed || !Array.isArray(patchNotesFeed.items) || patchNotesFeed.items.length === 0) {
+            return;
+        }
+
+        const items = patchNotesFeed.items.map(localizePatchNote);
+        const feature = document.querySelector('.patch-feature');
+        if (feature && items[0]) {
+            const featureImage = feature.querySelector('.patch-feature-media img');
+            if (featureImage && items[0].image) {
+                featureImage.src = items[0].image;
+            }
+            if (items[0].url) {
+                feature.dataset.patchUrl = items[0].url;
+                const readMore = feature.querySelector('.patch-meta a');
+                if (readMore) readMore.href = items[0].url;
+            }
+            setText(feature, '.patch-type', items[0].type);
+            setText(feature, 'h2, h3', items[0].title);
+            setText(feature, 'p', items[0].summary);
+            setText(feature, '.patch-meta span', items[0].date);
+        }
+
+        document.querySelectorAll('#latest-patches .patch-grid').forEach(grid => {
+            const cards = Array.from(grid.querySelectorAll('.patch-card'));
+            items.slice(1, 4).forEach((note, index) => renderPatchCard(cards[index], note));
+        });
+
+        document.querySelectorAll('#patch-notes .patch-grid').forEach(grid => {
+            const cards = Array.from(grid.querySelectorAll('.patch-card'));
+            items.slice(1, 7).forEach((note, index) => renderPatchCard(cards[index], note));
+        });
+    }
+
+    document.addEventListener('click', (event) => {
+        const patchItem = event.target.closest('[data-patch-url]');
+        if (!patchItem || event.target.closest('a')) return;
+        window.location.href = patchItem.dataset.patchUrl;
+    });
+
+    langOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            const lang = option.getAttribute('data-lang');
+            setLanguage(lang);
+        });
+    });
+
+    const getBestLanguage = () => {
+        const saved = localStorage.getItem('preferredLang');
+        if (saved) return saved;
+
+        const browserLang = navigator.language.split('-')[0];
+        return translations[browserLang] ? browserLang : 'en';
+    };
+
+    setLanguage(getBestLanguage());
+
+    if (document.querySelector('#latest-patches, #patch-notes')) {
+        fetch('patch-notes.json', { cache: 'no-store' })
+            .then(response => response.ok ? response.json() : null)
+            .then(data => {
+                if (!data) return;
+                patchNotesFeed = data;
+                renderPatchNotesFeed();
+            })
         },
         'deadloader': {
             realName: "UNIT 734",
