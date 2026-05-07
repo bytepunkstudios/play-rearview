@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Development | Rearview</title>
+    <meta name="description" content="Notas detalladas de Beta Development para Rearview.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="patch-detail-page">
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="isotipo.png" alt="Rearview Isotipo" id="nav-logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#universe" data-i18n="nav-universe">Universe</a></li>
+                <li><a href="drivers.html" data-i18n="nav-drivers">Drivers</a></li>
+                <li><a href="patch-notes.html" class="active" data-i18n="nav-patch-notes">Patch Notes</a></li>
+                <li class="lang-selector">
+                    <button id="lang-btn" class="lang-btn" aria-label="Change Language">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="current-lang">EN</span>
+                    </button>
+                    <div id="lang-dropdown" class="lang-dropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="es">Español</button>
+                    </div>
+                </li>
+                <li><a href="#" class="btn-primary" data-i18n="nav-play">Jugar Ahora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="patch-detail">
+            <section class="patch-detail-hero">
+                <img src="hero_bg.png" alt="Summit Valley">
+                <div class="container patch-detail-hero-content">
+                    <a href="patch-notes.html" class="patch-back-link">Notas de parche</a>
+                    <span class="patch-type">BETA DEVELOPMENT</span>
+                    <h1>La beta sigue creciendo</h1>
+                    <p>La beta sigue creciendo y evolucionando con nuevas mecanicas, mejoras jugables y muchisimo contenido nuevo.</p>
+                    <time>7 de mayo de 2026</time>
+                </div>
+            </section>
+
+            <div class="container patch-detail-layout">
+                <aside class="patch-detail-nav">
+                    <a href="#overview">Resumen</a>
+                    <a href="#summit-valley">Summit Valley</a>
+                    <a href="#balance">Balance</a>
+                    <a href="#mini-habilidades">Mini Habilidades</a>
+                    <a href="#vehiculos">Vehiculos</a>
+                </aside>
+
+                <div class="patch-detail-content">
+                    <section id="overview" class="patch-detail-section">
+                        <p>Esta actualizacion trae cambios importantes en combate, movilidad y exploracion, ademas de preparar el terreno para todo lo que viene en futuras expansiones del juego.</p>
+                    </section>
+
+                    <section id="summit-valley" class="patch-detail-section">
+                        <span class="patch-type">Nuevo mapa</span>
+                        <h2>Summit Valley</h2>
+                        <p>Bienvenido a Summit Valley, el primer contacto de los rebeldes con el exterior.</p>
+                        <p>Ubicado en una enorme zona suburbana abandonada, este nuevo mapa apuesta por escenarios mas abiertos, rutas alternativas y combates mucho mas intensos y dinamicos.</p>
+
+                        <h3>Novedades principales</h3>
+                        <ul>
+                            <li>Objetos destruibles distribuidos por diferentes zonas del mapa.</li>
+                            <li>Portales de transporte para moverte rapidamente entre puntos estrategicos.</li>
+                            <li>Nuevos elementos ambientales que hacen las partidas mas inmersivas.</li>
+                            <li>Mejor ritmo de combate y distribucion de zonas de conflicto.</li>
+                            <li>Nuevos puntos elevados y rutas secundarias para jugadores mas agresivos o tacticos.</li>
+                            <li>Ajustes de iluminacion y efectos ambientales para reforzar la identidad visual del escenario.</li>
+                        </ul>
+
+                        <p>Summit Valley marca el comienzo de una nueva etapa para el juego y sera el escenario principal de las proximas pruebas y eventos.</p>
+                        <time>7 de mayo de 2026</time>
+                    </section>
+
+                    <section class="patch-detail-section">
+                        <span class="patch-type">Mapa</span>
+                        <h2>Summit Valley</h2>
+                        <blockquote>Suburbios abandonados donde el caos nunca descansa.</blockquote>
+                        <p>Las calles bloqueadas a la ciudad convierten a Summit Valley en una zona impredecible, donde cada partida puede desarrollarse de forma completamente distinta.</p>
+                        <p>El mapa fue diseñado para ofrecer tanto enfrentamientos rapidos como persecuciones largas, permitiendo aprovechar atajos, coberturas y rutas de escape en todo momento.</p>
+                        <p>Ademas, se añadieron nuevos detalles ambientales y estructuras interactivas para hacer el entorno mucho mas vivo y dinamico durante las partidas.</p>
+                        <time>7 de mayo de 2026</time>
+                    </section>
+
+                    <section id="balance" class="patch-detail-section">
+                        <span class="patch-type">Balance</span>
+                        <h2>Pilotos mas agiles en combate</h2>
+                        <p>Realizamos multiples mejoras en la conduccion y respuesta de los vehiculos para lograr una experiencia mucho mas fluida, rapida y satisfactoria.</p>
+
+                        <h3>Cambios principales</h3>
+                        <ul>
+                            <li>Mejor respuesta en curvas cerradas.</li>
+                            <li>Sensacion de aceleracion mas natural.</li>
+                            <li>Ajustes de estabilidad durante impactos y colisiones.</li>
+                            <li>Mayor control del vehiculo en situaciones de combate intenso.</li>
+                            <li>Transiciones mas suaves entre velocidad, frenado y derrapes.</li>
+                        </ul>
+
+                        <p>El objetivo de estos cambios es que cada enfrentamiento se sienta mas dinamico, competitivo y divertido.</p>
+                        <time>7 de mayo de 2026</time>
+                    </section>
+
+                    <section id="mini-habilidades" class="patch-detail-section">
+                        <span class="patch-type">Sistema</span>
+                        <h2>Mini Habilidades</h2>
+                        <p>Llegan las nuevas Mini Habilidades, un sistema pensado para agregar mas variedad estrategica a cada partida.</p>
+                        <p>Ahora, antes de comenzar, cada jugador podra elegir entre dos habilidades especiales capaces de cambiar completamente el resultado de un combate dependiendo de la situacion.</p>
+
+                        <div class="ability-grid">
+                            <div>
+                                <h3>Shock</h3>
+                                <p>Una descarga electrica de corto alcance que paraliza temporalmente a los enemigos cercanos, reduciendo su movilidad y dejandolos vulnerables durante unos segundos.</p>
+                                <strong>Ideal para:</strong>
+                                <ul>
+                                    <li>Emboscadas.</li>
+                                    <li>Cortar persecuciones.</li>
+                                    <li>Iniciar ataques agresivos.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3>Shield</h3>
+                                <p>Genera un escudo temporal que bloquea parte del daño recibido por el vehiculo durante unos instantes.</p>
+                                <strong>Ideal para:</strong>
+                                <ul>
+                                    <li>Escapar de situaciones peligrosas.</li>
+                                    <li>Resistir ataques enemigos.</li>
+                                    <li>Sobrevivir durante enfrentamientos intensos.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <p>Este sistema seguira expandiendose en futuras actualizaciones con nuevas habilidades y mejoras adicionales.</p>
+                        <time>7 de mayo de 2026</time>
+                    </section>
+
+                    <section id="vehiculos" class="patch-detail-section">
+                        <span class="patch-type">Vehiculos</span>
+                        <h2>Actualizacion de vehiculos</h2>
+                        <p>Tambien realizamos mejoras visuales y de optimizacion en distintos vehiculos, ademas de incorporar una nueva categoria al juego.</p>
+
+                        <h3>Cambios realizados</h3>
+                        <ul>
+                            <li>Sprayer ahora cuenta con un modelo mas ligero y estilizado, mejorando tanto su apariencia como su rendimiento general.</li>
+                            <li>Breakway fue reemplazado por una version mas optimizada para mejorar estabilidad y desempeño durante las partidas.</li>
+                            <li>Se añadio Makoto, la primera motocicleta disponible en el juego.</li>
+                        </ul>
+
+                        <h3>Makoto</h3>
+                        <p>Makoto introduce un estilo de conduccion completamente diferente, enfocado en:</p>
+                        <ul>
+                            <li>Mayor velocidad.</li>
+                            <li>Movilidad mas agresiva.</li>
+                            <li>Maniobrabilidad superior.</li>
+                            <li>Mayor riesgo en enfrentamientos directos.</li>
+                        </ul>
+
+                        <p>La llegada de motocicletas abre nuevas posibilidades para futuras mecanicas y estilos de juego.</p>
+                        <time>7 de mayo de 2026</time>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Rearview Logo">
+            </div>
+            <p data-i18n="footer-copy">&copy; 2025 Rearview Games. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

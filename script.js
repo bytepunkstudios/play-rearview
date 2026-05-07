@@ -95,27 +95,27 @@ document.addEventListener('DOMContentLoaded', () => {
             "patch-title": "Patch <span class=\"highlight\">Notes</span>",
             "patch-view-all": "View all",
             "patch-back-home": "Back home",
-            "patch-feature-type": "Season 01",
-            "patch-feature-title": "The rebel offensive begins",
-            "patch-feature-copy": "New urban routes, arcade drift tuning, and improvements to the pace of team matches.",
+            "patch-feature-type": "BETA DEVELOPMENT",
+            "patch-feature-title": "The beta keeps growing",
+            "patch-feature-copy": "New mechanics, gameplay improvements, and content that prepares the ground for future expansions.",
             "patch-feature-date": "May 7, 2026",
             "patch-read-more": "Read more",
-            "patch-card1-type": "Balance",
-            "patch-card1-title": "More agile drivers in combat",
-            "patch-card1-copy": "We reduced recovery after impacts and increased response through tight turns.",
-            "patch-card1-date": "May 2, 2026",
-            "patch-card2-type": "Map",
-            "patch-card2-title": "Central District gets shortcuts",
-            "patch-card2-copy": "Side access points are now open for more aggressive chases and last-second comebacks.",
-            "patch-card2-date": "April 25, 2026",
+            "patch-card1-type": "Map",
+            "patch-card1-title": "Summit Valley",
+            "patch-card1-copy": "Abandoned suburbs with alternate routes, transport portals, and more dynamic combat.",
+            "patch-card1-date": "May 7, 2026",
+            "patch-card2-type": "Balance",
+            "patch-card2-title": "More agile drivers in combat",
+            "patch-card2-copy": "Driving, response, stability, and control improvements during intense combat situations.",
+            "patch-card2-date": "May 7, 2026",
             "patch-card3-type": "System",
-            "patch-card3-title": "Squad rewards",
-            "patch-card3-copy": "Assists, blocks, and shared objectives now grant more progress for the whole team.",
-            "patch-card3-date": "April 18, 2026",
-            "patch-card4-type": "Event",
-            "patch-card4-title": "Operation Blackout",
-            "patch-card4-copy": "A limited-time mode focused on quick sabotages, escorts, and coordinated escapes.",
-            "patch-card4-date": "April 11, 2026",
+            "patch-card3-title": "Mini Abilities",
+            "patch-card3-copy": "Choose between Shock and Shield to change the outcome of combat depending on the situation.",
+            "patch-card3-date": "May 7, 2026",
+            "patch-card4-type": "Vehicles",
+            "patch-card4-title": "Makoto joins the game",
+            "patch-card4-copy": "Visual improvements, driver optimization, and Makoto, the first motorcycle available.",
+            "patch-card4-date": "May 7, 2026",
             "patch-card5-type": "Vehicles",
             "patch-card5-title": "Light chassis upgrades",
             "patch-card5-copy": "We increased aerial stability and reduced speed loss after landing.",
@@ -161,27 +161,27 @@ document.addEventListener('DOMContentLoaded', () => {
             "patch-title": "Notas de <span class=\"highlight\">Parche</span>",
             "patch-view-all": "Ver todas",
             "patch-back-home": "Volver al inicio",
-            "patch-feature-type": "Temporada 01",
-            "patch-feature-title": "Comienza la ofensiva rebelde",
-            "patch-feature-copy": "Nuevas rutas urbanas, ajustes al derrape arcade y mejoras al ritmo de las partidas por equipos.",
+            "patch-feature-type": "BETA DEVELOPMENT",
+            "patch-feature-title": "La beta sigue creciendo",
+            "patch-feature-copy": "Nuevas mecanicas, mejoras jugables y contenido para preparar el terreno de futuras expansiones.",
             "patch-feature-date": "7 de mayo de 2026",
-            "patch-read-more": "Leer más",
-            "patch-card1-type": "Balance",
-            "patch-card1-title": "Pilotos más ágiles en combate",
-            "patch-card1-copy": "Reducimos la recuperación tras impactos y aumentamos la respuesta en giros cerrados.",
-            "patch-card1-date": "2 de mayo de 2026",
-            "patch-card2-type": "Mapa",
-            "patch-card2-title": "Distrito Central recibe atajos",
-            "patch-card2-copy": "Se abren accesos laterales para persecuciones más agresivas y remontadas de último segundo.",
-            "patch-card2-date": "25 de abril de 2026",
+            "patch-read-more": "Leer mas",
+            "patch-card1-type": "Mapa",
+            "patch-card1-title": "Summit Valley",
+            "patch-card1-copy": "Suburbios abandonados con rutas alternativas, portales de transporte y combates mas dinamicos.",
+            "patch-card1-date": "7 de mayo de 2026",
+            "patch-card2-type": "Balance",
+            "patch-card2-title": "Pilotos mas agiles en combate",
+            "patch-card2-copy": "Mejoras de conduccion, respuesta, estabilidad y control durante situaciones de combate intenso.",
+            "patch-card2-date": "7 de mayo de 2026",
             "patch-card3-type": "Sistema",
-            "patch-card3-title": "Recompensas de escuadrón",
-            "patch-card3-copy": "Las asistencias, bloqueos y objetivos compartidos ahora suman más progreso para todo el equipo.",
-            "patch-card3-date": "18 de abril de 2026",
-            "patch-card4-type": "Evento",
-            "patch-card4-title": "Operación Corte de Luz",
-            "patch-card4-copy": "Un modo temporal enfocado en sabotajes rápidos, escoltas y escapes coordinados.",
-            "patch-card4-date": "11 de abril de 2026",
+            "patch-card3-title": "Mini Habilidades",
+            "patch-card3-copy": "Elige entre Shock y Shield para cambiar el resultado de un combate segun la situacion.",
+            "patch-card3-date": "7 de mayo de 2026",
+            "patch-card4-type": "Vehiculos",
+            "patch-card4-title": "Makoto llega al juego",
+            "patch-card4-copy": "Mejoras visuales, optimizacion de pilotos y Makoto, la primera motocicleta disponible.",
+            "patch-card4-date": "7 de mayo de 2026",
             "patch-card5-type": "Vehículos",
             "patch-card5-title": "Mejoras al chasis ligero",
             "patch-card5-copy": "Aumentamos estabilidad aérea y reducimos la pérdida de velocidad al aterrizar.",
@@ -241,6 +241,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const renderPatchCard = (card, note) => {
         if (!card || !note) return;
+        if (note.url) {
+            card.dataset.patchUrl = note.url;
+        }
         setText(card, '.patch-type', note.type);
         setText(card, 'h3', note.title);
         setText(card, 'p', note.summary);
@@ -255,6 +258,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const items = patchNotesFeed.items;
         const feature = document.querySelector('.patch-feature');
         if (feature && items[0]) {
+            const featureImage = feature.querySelector('.patch-feature-media img');
+            if (featureImage && items[0].image) {
+                featureImage.src = items[0].image;
+            }
+            if (items[0].url) {
+                feature.dataset.patchUrl = items[0].url;
+                const readMore = feature.querySelector('.patch-meta a');
+                if (readMore) readMore.href = items[0].url;
+            }
             setText(feature, '.patch-type', items[0].type);
             setText(feature, 'h2, h3', items[0].title);
             setText(feature, 'p', items[0].summary);
@@ -271,6 +283,12 @@ document.addEventListener('DOMContentLoaded', () => {
             items.slice(1, 7).forEach((note, index) => renderPatchCard(cards[index], note));
         });
     }
+
+    document.addEventListener('click', (event) => {
+        const patchItem = event.target.closest('[data-patch-url]');
+        if (!patchItem || event.target.closest('a')) return;
+        window.location.href = patchItem.dataset.patchUrl;
+    });
 
     // Event listeners for options
     langOptions.forEach(option => {
