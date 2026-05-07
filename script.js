@@ -128,6 +128,17 @@ document.addEventListener('DOMContentLoaded', () => {
             "cta-p": "Join thousands of drivers and prove who is the king of the road.",
             "cta-btn": "Join the Beta",
             "footer-copy": "&copy; 2025 Rearview Games. All rights reserved.",
+            "drivers-title": "SELECT YOUR <span class=\"highlight\">DRIVER</span>",
+            "drivers-subtitle": "THE ASPHALT AWAITS YOUR LEGACY",
+            "filter-btn": "FILTER",
+            "filter-role": "BY ROLE",
+            "filter-az": "A-Z",
+            "filter-za": "Z-A",
+            "filter-random": "RANDOM",
+            "label-role": "ROLE:",
+            "label-origin": "ORIGIN:",
+            "label-stats": "DRIVER STATS",
+            "btn-view-vehicle": "VIEW VEHICLE",
             "detail-back": "Patch notes",
             "detail-hero-title": "The beta keeps growing",
             "detail-hero-copy": "The beta keeps growing and evolving with new mechanics, gameplay improvements, and a lot of new content.",
@@ -249,6 +260,17 @@ document.addEventListener('DOMContentLoaded', () => {
             "cta-p": "Únete a miles de pilotos y demuestra quién es el rey de la carretera.",
             "cta-btn": "Únete a la Beta",
             "footer-copy": "&copy; 2025 Rearview Games. Todos los derechos reservados.",
+            "drivers-title": "SELECCIONA TU <span class=\"highlight\">PILOTO</span>",
+            "drivers-subtitle": "EL ASFALTO ESPERA TU LEGADO",
+            "filter-btn": "FILTRAR",
+            "filter-role": "POR ROL",
+            "filter-az": "A-Z",
+            "filter-za": "Z-A",
+            "filter-random": "ALEATORIO",
+            "label-role": "ROL:",
+            "label-origin": "ORIGEN:",
+            "label-stats": "ESTADÍSTICAS",
+            "btn-view-vehicle": "VER VEHÍCULO",
             "detail-back": "Notas de parche",
             "detail-hero-title": "La beta sigue creciendo",
             "detail-hero-copy": "La beta sigue creciendo y evolucionando con nuevas mecanicas, mejoras jugables y muchisimo contenido nuevo.",
@@ -356,7 +378,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "patch-card3-date": "2026年5月7日",
             "patch-card4-type": "車両",
             "patch-card4-title": "Makotoが参戦",
-            "patch-card4-copy": "ビジュアルの改善、ドライバーの最適化、そして初のオートバイ「Makoto」が登場。",
+            "patch-card4-copy": "ビジュアルの改善、ドライバーの最適化、刻々と変化する環境に応じたMakotoの初登場。",
             "patch-card4-date": "2026年5月7日",
             "patch-card5-type": "車両",
             "patch-card5-title": "軽量シャシーのアップグレード",
@@ -370,6 +392,17 @@ document.addEventListener('DOMContentLoaded', () => {
             "cta-p": "何千人ものドライバーと一緒に、誰が道の王であるかを証明せよ。",
             "cta-btn": "ベータに参加する",
             "footer-copy": "&copy; 2025 Rearview Games. All rights reserved.",
+            "drivers-title": "<span class=\"highlight\">ドライバー</span>を選択せよ",
+            "drivers-subtitle": "アスファルトが君の伝説を待っている",
+            "filter-btn": "フィルター",
+            "filter-role": "ロール別",
+            "filter-az": "A-Z順",
+            "filter-za": "Z-A順",
+            "filter-random": "ランダム",
+            "label-role": "ロール:",
+            "label-origin": "出身:",
+            "label-stats": "ドライバーステータス",
+            "btn-view-vehicle": "車両を見る",
             "detail-back": "パッチノート",
             "detail-hero-title": "進化し続けるベータ",
             "detail-hero-copy": "ベータは新しいメカニクス、ゲームプレイの改善、そして多くの新しいコンテンツとともに成長し、進化し続けています。",
@@ -389,9 +422,9 @@ document.addEventListener('DOMContentLoaded', () => {
             "detail-summit-li5": "アグレッシブまたはタクティカルなプレイヤー向けの新しい高台とセカンダリルート。",
             "detail-summit-li6": "ステージの視覚的アイデンティティを強化するための照明と環境効果の調整。",
             "detail-summit-p3": "サミットバレーはゲームの新しいステージの始まりであり、今後のテストやイベントのメイン設定となります。",
-"detail-map-quote": "混沌が眠ることのない廃墟の郊外。",
+            "detail-map-quote": "混沌が眠ることのない廃墟の郊外。",
             "detail-map-p1": "都市への封鎖された道路により、サミットバレーはすべてのマッチが完全に異なる方法で展開される予測不能なゾーンとなります。",
-            "detail-map-p2": "マップは素早い戦闘と長い追跡の両方に対応するように設計されており、プレイヤーはいつでもショートカット、カバー、逃走ルートを利用できます。",
+            "detail-map-p2": "マップは素早い戦闘 y 長い追跡の両方に対応するように設計されており、プレイヤーはいつでもショートカット、カバー、逃走ルートを利用できます。",
             "detail-map-p3": "新しい環境の詳細とインタラクティブな構造により、マッチ中の空間がより生き生きとダイナミックに感じられるようになりました。",
             "detail-balance-p1": "車両のハンドリングとレスポンスに複数の改善を加え、よりスムーズで速く、満足度の高い体験を実現しました。",
             "detail-main-changes": "主な変更点",
@@ -426,7 +459,6 @@ document.addEventListener('DOMContentLoaded', () => {
             "detail-makoto-li4": "直接戦闘における高いリスク。",
             "detail-vehicles-p2": "オートバイの登場は、将来のメカニクスやプレイスタイルの新しい可能性を切り開きます。"
         }
-
     };
 
     const langBtn = document.getElementById('lang-btn');
@@ -554,7 +586,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const setLanguage = (lang) => {
         activeLang = translations[lang] ? lang : 'en';
         localStorage.setItem('preferredLang', activeLang);
-        currentLangText.textContent = activeLang.toUpperCase();
+        if (currentLangText) currentLangText.textContent = activeLang.toUpperCase();
 
         document.querySelectorAll('[data-i18n]').forEach(el => {
             const key = el.getAttribute('data-i18n');
@@ -674,13 +706,50 @@ document.addEventListener('DOMContentLoaded', () => {
                 patchNotesFeed = data;
                 renderPatchNotesFeed();
             })
+            .catch(() => {
+                // Static fallback content remains visible if the feed cannot be loaded.
+            });
+    }
+
+    // --- Driver Overlay Logic ---
+    const driversData = {
+        'breakway': {
+            realName: "KAITO TANAKA",
+            alias: "BREAKWAY",
+            role: "DPS",
+            origin: "NEO-TOKYO",
+            origin_es: "NEO-TOKIO",
+            origin_ja: "ネオ東京",
+            bio: "A former street racer who dominates the asphalt with calculated aggression. Known for his high-risk, high-reward drifting style that leaves opponents in the dust.",
+            bio_es: "Un ex corredor callejero que domina el asfalto con una agresión calculada. Conocido por su estilo de derrape de alto riesgo y alta recompensa.",
+            bio_ja: "計算された攻撃性でアスファルトを支配する元ストリートレーサー。対戦相手を置き去りにするハイリスク・ハイリターンのドリフトスタイルで知られる。",
+            stats: { speed: 95, defense: 40, utility: 60 },
+            image: "breakway.png"
+        },
+        'sneaky': {
+            realName: "SARAH JENKINS",
+            alias: "SNEAKY",
+            role: "DPS",
+            origin: "CHICAGO",
+            origin_es: "CHICAGO",
+            origin_ja: "シカゴ",
+            bio: "A master of stealth and precision. She strikes when least expected, using the track's blind spots to her advantage to overtake rivals instantly.",
+            bio_es: "Una maestra del sigilo y la precisión. Ataca cuando menos se lo espera, utilizando los puntos ciegos de la pista para adelantar a sus rivales al instante.",
+            bio_ja: "隠密と精密のマスター。コースの死角を利用して瞬時にライバルを追い抜き、予期せぬ瞬間に攻撃を仕掛ける。",
+            stats: { speed: 90, defense: 30, utility: 80 },
+            image: "sneaky.png"
         },
         'deadloader': {
             realName: "UNIT 734",
             alias: "DEADLOADER",
             role: "TANK",
+            role_ja: "タンク",
             origin: "CYBER-WASTELAND",
+            origin_es: "CYBER-WASTELAND",
+            origin_ja: "サイバー・ウェイストランド",
             bio: "A heavy-duty autonomous hauler reprogrammed for destruction. What it lacks in speed, it makes up for in sheer, unstoppable durability.",
+            bio_es: "Un transportador autónomo de carga pesada reprogramado para la destrucción. Lo que le falta en velocidad, lo compensa con una durabilidad pura e imparable.",
+            bio_ja: "破壊のために再プログラムされた重量級の自律型運搬機。スピードの欠如を、圧倒的で止められない耐久性で補っている。",
             stats: { speed: 50, defense: 98, utility: 40 },
             image: "deadloader.png"
         },
@@ -688,8 +757,13 @@ document.addEventListener('DOMContentLoaded', () => {
             realName: "MARCUS STEEL",
             alias: "JUGGERNAUT",
             role: "TANK",
+            role_ja: "タンク",
             origin: "BERLIN",
+            origin_es: "BERLÍN",
+            origin_ja: "ベルリン",
             bio: "An indestructible force on the track. Marcus uses his fortified chassis to push through blockades and clear the path for his team.",
+            bio_es: "Una fuerza indestructible en la pista. Marcus utiliza su chasis fortificado para atravesar bloqueos y despejar el camino para su equipo.",
+            bio_ja: "コース上の不滅の力。マーカスは強化されたシャシーを使用して封鎖を突き破り、チームのために道を切り開く。",
             stats: { speed: 60, defense: 90, utility: 50 },
             image: "juggernaut.png"
         },
@@ -697,8 +771,13 @@ document.addEventListener('DOMContentLoaded', () => {
             realName: "ELARA VANE",
             alias: "SPRAYER",
             role: "SUPPORT",
+            role_ja: "サポート",
             origin: "SEATTLE",
+            origin_es: "SEATTLE",
+            origin_ja: "シアトル",
             bio: "Uses experimental nanotech to repair allies on the fly. Her vehicle leaves a trail of restoration particles that heal teammates following in her slipstream.",
+            bio_es: "Utiliza nanotecnología experimental para reparar aliados sobre la marcha. Su vehículo deja un rastro de partículas de restauración que curan a los compañeros.",
+            bio_ja: "実験的なナノテクノロジーを使用して、移動中に味方を修理する。彼女の車両は、スリップストリームを走るチームメイトを回復させる修復粒子の跡を残す。",
             stats: { speed: 70, defense: 60, utility: 95 },
             image: "sprayer.png"
         },
@@ -706,8 +785,13 @@ document.addEventListener('DOMContentLoaded', () => {
             realName: "DR. ARIN THORNE",
             alias: "WELFARE",
             role: "SUPPORT",
+            role_ja: "サポート",
             origin: "LONDON",
+            origin_es: "LONDRES",
+            origin_ja: "ロンドン",
             bio: "A combat medic who turned the racetrack into a triage unit. Specialized in defensive shielding and emergency repairs during high-speed collisions.",
+            bio_es: "Un médico de combate que convirtió la pista de carreras en una unidad de triaje. Especializado en escudos defensivos y reparaciones de emergencia.",
+            bio_ja: "レース場を負傷者待機所に変えたコンバットメディック。高速衝突時の防御シールドと緊急修理を専門としている。",
             stats: { speed: 65, defense: 70, utility: 85 },
             image: "welfare.png"
         }
@@ -736,9 +820,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Populate Data
         oName.textContent = data.alias;
         oRealName.textContent = data.realName;
-        oRole.textContent = data.role;
-        oOrigin.textContent = data.origin;
-        oBio.textContent = data.bio;
+        oRole.textContent = (activeLang === 'ja' && data.role_ja) ? data.role_ja : data.role;
+        oOrigin.textContent = data[`origin_${activeLang}`] || data.origin;
+        oBio.textContent = data[`bio_${activeLang}`] || data.bio;
         oImage.src = data.image;
 
         // Reset bars for animation
@@ -759,7 +843,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function closeOverlay() {
-        overlay.classList.remove('active');
+        if (overlay) overlay.classList.remove('active');
         document.body.style.overflow = '';
     }
 
@@ -780,7 +864,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Close on escape key
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+        if (e.key === 'Escape' && overlay && overlay.classList.contains('active')) {
             closeOverlay();
         }
     });

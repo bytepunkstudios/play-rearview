@@ -36,6 +36,7 @@
                     <div id="lang-dropdown" class="lang-dropdown">
                         <button class="lang-option" data-lang="en">English</button>
                         <button class="lang-option" data-lang="es">Español</button>
+                        <button class="lang-option" data-lang="ja">日本語</button>
                     </div>
                 </li>
                 <li><a href="#" class="btn-primary" data-i18n="nav-play">Jugar Ahora</a></li>
@@ -51,23 +52,23 @@
                     <div class="header-content">
                         <div class="brackets-title">
                             <span class="bracket"></span>
-                            <h1>SELECT YOUR <span class="highlight">DRIVER</span></h1>
+                            <h1 data-i18n="drivers-title">SELECT YOUR <span class="highlight">DRIVER</span></h1>
                             <span class="bracket"></span>
                         </div>
 
                         <div class="filter-container">
-                            <button id="filter-btn" class="filter-btn">
+                            <button id="filter-btn" class="filter-btn" data-i18n="filter-btn">
                                 <i class="fa-solid fa-filter"></i> FILTER
                             </button>
                             <div id="filter-dropdown" class="filter-dropdown">
-                                <button class="filter-option" data-sort="role">BY ROLE</button>
-                                <button class="filter-option" data-sort="az">A-Z</button>
-                                <button class="filter-option" data-sort="za">Z-A</button>
-                                <button class="filter-option" data-sort="random">RANDOM</button>
+                                <button class="filter-option" data-sort="role" data-i18n="filter-role">BY ROLE</button>
+                                <button class="filter-option" data-sort="az" data-i18n="filter-az">A-Z</button>
+                                <button class="filter-option" data-sort="za" data-i18n="filter-za">Z-A</button>
+                                <button class="filter-option" data-sort="random" data-i18n="filter-random">RANDOM</button>
                             </div>
                         </div>
                     </div>
-                    <p class="subtitle fade-in-up delay-1">THE ASPHALT AWAITS YOUR LEGACY</p>
+                    <p class="subtitle fade-in-up delay-1" data-i18n="drivers-subtitle">THE ASPHALT AWAITS YOUR LEGACY</p>
                 </div>
 
                 <div class="drivers-grid reveal-item delay-2" id="drivers-grid">
@@ -136,11 +137,11 @@
 
                             <div class="char-tags">
                                 <div class="char-tag">
-                                    <span class="tag-label">ROLE:</span>
+                                    <span class="tag-label" data-i18n="label-role">ROLE:</span>
                                     <span id="overlay-role" class="tag-value">DPS</span>
                                 </div>
                                 <div class="char-tag">
-                                    <span class="tag-label">ORIGIN:</span>
+                                    <span class="tag-label" data-i18n="label-origin">ORIGIN:</span>
                                     <span id="overlay-origin" class="tag-value">UNKNOWN</span>
                                 </div>
                             </div>
@@ -150,7 +151,7 @@
                             </p>
 
                             <div class="char-stats">
-                                <h3>DRIVER STATS</h3>
+                                <h3 data-i18n="label-stats">DRIVER STATS</h3>
                                 <div class="stat-row">
                                     <span class="stat-label">SPEED</span>
                                     <div class="stat-bar-container">
@@ -172,7 +173,7 @@
                             </div>
 
                             <div class="char-actions">
-                                <button class="action-btn primary-btn" id="view-vehicle-btn">
+                                <button class="action-btn primary-btn" id="view-vehicle-btn" data-i18n="btn-view-vehicle">
                                     <i class="fa-solid fa-car"></i> VIEW VEHICLE
                                 </button>
                             </div>
