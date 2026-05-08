@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download | Rearview - Arena Shooter</title>
+    <meta name="description" content="Download the Bytepunk Client and start playing Rearview today.">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .download-page #download-hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, rgba(15, 25, 35, 0.95) 0%, rgba(10, 10, 15, 0.98) 100%), url('maps.png') center/cover no-repeat;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .download-container {
+            max-width: 800px;
+            z-index: 10;
+            padding: 2rem;
+        }
+
+        .download-container h1 {
+            font-family: var(--font-header);
+            font-size: clamp(3rem, 10vw, 6rem);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            line-height: 1;
+            letter-spacing: -2px;
+        }
+
+        .download-container p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .client-btn {
+            background: #000;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 1.5rem 4rem;
+            font-size: 1.5rem;
+            font-family: var(--font-header);
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .client-btn:hover {
+            background: #111;
+            border-color: var(--accent-color);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .client-btn:active {
+            transform: translateY(0);
+        }
+
+        .download-msg {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+            color: var(--accent-cyan);
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.5s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .download-msg.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Decorative Scanlines */
+        .download-page .scanline {
+            width: 100%;
+            height: 100px;
+            z-index: 5;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.02) 50%, rgba(0, 0, 0, 0) 100%);
+            opacity: 0.1;
+            position: absolute;
+            bottom: 100%;
+            animation: scanline 10s linear infinite;
+        }
+
+        @keyframes scanline {
+            0% { bottom: 100%; }
+            100% { bottom: -100px; }
+        }
+    </style>
+</head>
+
+<body class="download-page">
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="isotipo.png" alt="Rearview Isotipo" id="nav-logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#universe" data-i18n="nav-universe">Universe</a></li>
+                <li><a href="drivers.html" data-i18n="nav-drivers">Drivers</a></li>
+                <li><a href="patch-notes.html" data-i18n="nav-patch-notes">Patch Notes</a></li>
+                <li><a href="support.html" data-i18n="nav-support">Support us</a></li>
+                <li class="lang-selector">
+                    <button id="lang-btn" class="lang-btn" aria-label="Change Language">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="current-lang">EN</span>
+                    </button>
+                    <div id="lang-dropdown" class="lang-dropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="es">Español</button>
+                        <button class="lang-option" data-lang="ja">日本語</button>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="download-hero">
+            <div class="scanline"></div>
+            <div class="download-container">
+                <h1 data-i18n="download-title">READY TO <span class="highlight">DRIVE?</span></h1>
+                <p data-i18n="download-p">Get the Bytepunk Client and join the Closed Beta. NovaTerra awaits its next champion.</p>
+                
+                <button id="download-client-btn" class="client-btn">
+                    <i class="fa-solid fa-download"></i>
+                    <span data-i18n="download-btn-text">Download Bytepunk Client</span>
+                </button>
+
+                <div id="download-status" class="download-msg" data-i18n="download-status-msg">
+                    La descarga iniciará en unos segundos...
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('download-client-btn').addEventListener('click', function() {
+            const status = document.getElementById('download-status');
+            status.classList.add('active');
+            
+            // Here you would normally trigger the actual file download
+            console.log("Download started...");
+            
+            // Optional: simulate download start
+            setTimeout(() => {
+                // window.location.href = 'BytepunkClientSetup.exe'; 
+            }, 2000);
+        });
+    </script>
+</body>
+
+</html>

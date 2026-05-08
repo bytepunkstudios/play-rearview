@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rearview | Speed Beyond Limits</title>
+    <title>Rearview | Arena Shooter - Vehicular Combat</title>
     <meta name="description"
-        content="Experimenta la adrenalina pura en Rearview. El videojuego de carreras definitivo con gráficos de última generación y acción sin límites.">
+        content="Experimenta el combate vehicular definitivo en Rearview. Un arena shooter frenético con gráficos de última generación y acción táctica en equipo.">
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,6 +19,7 @@
 </head>
 
 <body>
+    <!-- ─── NAVIGATION ─── -->
     <header id="main-header">
         <nav class="container">
             <div class="logo">
@@ -27,6 +29,7 @@
                 <li><a href="#universe" data-i18n="nav-universe">Universe</a></li>
                 <li><a href="drivers.html" data-i18n="nav-drivers">Drivers</a></li>
                 <li><a href="patch-notes.html" data-i18n="nav-patch-notes">Patch Notes</a></li>
+                <li><a href="support.html" data-i18n="nav-support">Support us</a></li>
                 <li class="lang-selector">
                     <button id="lang-btn" class="lang-btn" aria-label="Change Language">
                         <i class="fa-solid fa-globe"></i>
@@ -38,29 +41,63 @@
                         <button class="lang-option" data-lang="ja">日本語</button>
                     </div>
                 </li>
-                <li><a href="#" class="btn-primary" data-i18n="nav-play">Jugar Ahora</a></li>
+                <li><a href="download.html" class="btn-primary" data-i18n="nav-play">Jugar Ahora</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- ─── HERO ─── -->
         <section id="hero">
             <div class="hero-overlay"></div>
+            <!-- Animated particle layer -->
+            <div class="hero-particles" id="heroParticles"></div>
+
             <div class="hero-content container">
                 <img src="logo.png" alt="Rearview Logo" class="hero-logo reveal-text">
-                <p class="hero-tagline reveal-text delay-1" data-i18n="hero-tagline">ACCION EN EQUIPO • GRATIS</p>
+                <p class="hero-tagline reveal-text delay-1" data-i18n="hero-tagline">ARENA SHOOTER • COMBATE VEHICULAR</p>
                 <div class="hero-actions reveal-text delay-2">
-                    <a href="#" class="btn-primary btn-large" data-i18n="hero-download">Descargar Gratis</a>
-                    <a href="#features" class="btn-secondary btn-large" data-i18n="hero-more">Ver Más</a>
+                    <a href="download.html" class="btn-primary btn-large" data-i18n="hero-download">Descargar Ahora</a>
+                </div>
+            </div>
+
+            <!-- Scroll indicator -->
+            <div class="hero-scroll-hint">
+                <span data-i18n="scroll-hint">Desplázate</span>
+                <div class="scroll-arrow">
+                    <i class="fa-solid fa-chevron-down"></i>
                 </div>
             </div>
         </section>
 
+        <!-- ─── SEASON / SPOTLIGHT BANNER ─── -->
+        <section class="cinematic-section" id="spotlight">
+            <div class="cinematic-bg">
+                <img src="action.png" alt="Enter the Arena" class="cinematic-bg-img">
+                <div class="cinematic-overlay"></div>
+            </div>
+            <div class="container cinematic-content">
+                <div class="cinematic-badge">
+                    <span class="badge-num">00</span>
+                    <span class="badge-label" data-i18n="spotlight-eyebrow">Temporada Actual</span>
+                </div>
+                <h2 data-i18n="spotlight-h2">Entra en la <span class="highlight">Arena</span></h2>
+                <h3 data-i18n="spotlight-h3">Ready for Combat</h3>
+                <p data-i18n="spotlight-p">Compite contra pilotos de todo el mundo en la beta cerrada de Rearview.
+                    Elige tu piloto, domina la arena y demuestra quién manda.</p>
+                <div class="spotlight-actions">
+                    <a href="download.html" class="btn-primary" data-i18n="spotlight-btn1">Descargar Beta</a>
+                    <a href="patch-notes.html" class="btn-ghost" data-i18n="spotlight-btn2">Notas del parche</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── FEATURES STRIP ─── -->
         <section id="features">
             <div class="container">
                 <div class="section-header">
                     <div class="racing-stripe"></div>
-                    <h2 class="section-title" data-i18n="features-title">Domina <span class="highlight">la Pista</span>
+                    <h2 class="section-title" data-i18n="features-title">Domina <span class="highlight">la Arena</span>
                     </h2>
                 </div>
                 <div class="features-grid">
@@ -69,156 +106,221 @@
                             <i class="fa-solid fa-gauge-high"></i>
                         </div>
                         <h3 data-i18n="feat1-h3">Fisica <span>Arcade</span></h3>
-                        <p data-i18n="feat1-p">Conduce al limite con controles inmediatos, derrapes exagerados y carreras faciles de aprender pero dificiles de dominar.</p>
-                        <div class="card-corner"></div>
+                        <p data-i18n="feat1-p">Conduce al limite con controles inmediatos, derrapes exagerados y combates
+                            faciles de aprender pero dificiles de dominar.</p>
+
                     </div>
                     <div class="feature-card reveal-item" data-position="02">
                         <div class="feature-icon">
                             <i class="fa-solid fa-network-wired"></i>
                         </div>
                         <h3 data-i18n="feat2-h3">Partidas <span>Freneticas</span></h3>
-                        <p data-i18n="feat2-p">Cada carrera mezcla velocidad, choques y decisiones rapidas para mantener la accion siempre al rojo vivo.</p>
-                        <div class="card-corner"></div>
+                        <p data-i18n="feat2-p">Cada combate mezcla velocidad, choques y decisiones rapidas para mantener
+                            la accion siempre al rojo vivo.</p>
+
                     </div>
                     <div class="feature-card reveal-item" data-position="03">
                         <div class="feature-icon">
                             <i class="fa-solid fa-users"></i>
                         </div>
                         <h3 data-i18n="feat3-h3">Personajes <span>Carismaticos</span></h3>
-                        <p data-i18n="feat3-p">Elige pilotos con personalidad propia, estilos reconocibles y una actitud lista para encender la pista.</p>
-                        <div class="card-corner"></div>
+                        <p data-i18n="feat3-p">Elige pilotos con personalidad propia, estilos reconocibles y una
+                            actitud lista para encender la arena.</p>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Featured Section: Join a Faction -->
-        <section class="featured-section featured-left">
-            <div class="featured-content">
-                <div class="featured-text">
-                    <span class="section-number">01</span>
-                    <h2 data-i18n="factions-h2">Join a <span class="highlight">Faction</span></h2>
-                    <h3 data-i18n="factions-h3">Choose Your Side</h3>
-                    <p data-i18n="factions-p">Align with one of three elite racing factions. Each team offers unique
-                        advantages, exclusive
-                        vehicle skins, and special abilities. Compete for dominance and prove your faction's superiority
-                        on the leaderboards.</p>
-                    <a href="#factions" class="btn-primary" data-i18n="factions-btn">EXPLORE FACTIONS</a>
+        <!-- ─── CINEMATIC SHOWCASE: FACTIONS ─── -->
+        <section class="cinematic-section" id="universe">
+            <div class="cinematic-bg">
+                <img src="factions.png" alt="Racing Factions" class="cinematic-bg-img">
+                <div class="cinematic-overlay"></div>
+            </div>
+            <div class="container cinematic-content">
+                <div class="cinematic-badge">
+                    <span class="badge-num">01</span>
+                    <span class="badge-label" data-i18n="badge-factions">Facciones</span>
                 </div>
-                <div class="featured-image">
-                    <img src="factions.png" alt="Racing Factions">
-                </div>
+                <h2 data-i18n="factions-h2">Join a <span class="highlight">Faction</span></h2>
+                <h3 data-i18n="factions-h3">Choose Your Side</h3>
+                <p data-i18n="factions-p">Align with one of three elite combat factions. Each team offers unique
+                    advantages, exclusive vehicle skins, and special abilities. Compete for dominance and prove your
+                    faction's superiority on the leaderboards.</p>
+                <a href="#factions" class="btn-primary" data-i18n="factions-btn">EXPLORE FACTIONS</a>
             </div>
         </section>
 
-        <!-- Featured Section: Meet Your Drivers -->
-        <section class="featured-section featured-right">
-            <div class="featured-content">
-                <div class="featured-image">
-                    <img src="drivers.png" alt="Rearview Drivers">
+        <!-- ─── CINEMATIC SHOWCASE: DRIVERS ─── -->
+        <section class="cinematic-section cinematic-flip" id="drivers-showcase">
+            <div class="cinematic-bg">
+                <img src="drivers.png" alt="Rearview Drivers" class="cinematic-bg-img">
+                <div class="cinematic-overlay"></div>
+            </div>
+            <div class="container cinematic-content">
+                <div class="cinematic-badge">
+                    <span class="badge-num">02</span>
+                    <span class="badge-label" data-i18n="badge-drivers">Pilotos</span>
                 </div>
-                <div class="featured-text">
-                    <span class="section-number">02</span>
-                    <h2 data-i18n="drivers-h2">Meet Your <span class="highlight">Drivers</span></h2>
-                    <h3 data-i18n="drivers-h3">Every Racer Has a Story</h3>
-                    <p data-i18n="drivers-p">Choose from a diverse roster of skilled drivers, each with unique
-                        personalities, backgrounds, and
-                        special racing techniques. Master their abilities and dominate the competition with style.</p>
-                    <a href="#drivers" class="btn-primary" data-i18n="drivers-btn">VIEW ALL DRIVERS</a>
-                </div>
+                <h2 data-i18n="drivers-h2">Meet Your <span class="highlight">Drivers</span></h2>
+                <h3 data-i18n="drivers-h3">Every Driver Has a Story</h3>
+                <p data-i18n="drivers-p">Choose from a diverse roster of skilled drivers, each with unique
+                    personalities, backgrounds, and special combat techniques. Master their abilities and dominate the
+                    competition with style.</p>
+                <a href="drivers.html" class="btn-primary" data-i18n="drivers-btn">VIEW ALL DRIVERS</a>
             </div>
         </section>
 
-        <!-- Featured Section: Dive Into the Maps -->
-        <section class="featured-section featured-left">
-            <div class="featured-content">
-                <div class="featured-text">
-                    <span class="section-number">03</span>
-                    <h2 data-i18n="maps-h2">Dive into the <span class="highlight">Maps</span></h2>
-                    <h3 data-i18n="maps-h3">Race Across the World</h3>
-                    <p data-i18n="maps-p">Every track is a battleground designed to test your creativity and skill. From
-                        neon-lit
-                        cityscapes to treacherous mountain passes, each map offers unique challenges and spectacular
-                        moments you'll never forget.</p>
-                    <a href="#maps" class="btn-primary" data-i18n="maps-btn">SEE ALL MAPS</a>
+        <!-- ─── CINEMATIC SHOWCASE: MAPS ─── -->
+        <section class="cinematic-section" id="maps-showcase">
+            <div class="cinematic-bg">
+                <img src="maps.png" alt="Race Tracks" class="cinematic-bg-img">
+                <div class="cinematic-overlay"></div>
+            </div>
+            <div class="container cinematic-content">
+                <div class="cinematic-badge">
+                    <span class="badge-num">03</span>
+                    <span class="badge-label" data-i18n="badge-maps">Mapas</span>
                 </div>
-                <div class="featured-image">
-                    <img src="maps.png" alt="Race Tracks">
-                </div>
+                <h2 data-i18n="maps-h2">Dive into the <span class="highlight">Arenas</span></h2>
+                <h3 data-i18n="maps-h3">Combat Across the World</h3>
+                <p data-i18n="maps-p">Every arena is a battleground designed to test your creativity and skill. From
+                    neon-lit cityscapes to treacherous mountain passes, each map offers unique challenges and spectacular
+                    moments you'll never forget.</p>
+                <a href="#maps" class="btn-primary" data-i18n="maps-btn">SEE ALL MAPS</a>
             </div>
         </section>
 
+        <!-- ─── NEWS / PATCH CARDS ─── -->
         <section id="latest-patches">
             <div class="container">
                 <div class="patch-header">
                     <div>
                         <span class="patch-eyebrow" data-i18n="patch-eyebrow">Actualizaciones</span>
-                        <h2 class="section-title" data-i18n="latest-patch-title">Últimas <span class="highlight">Notas</span></h2>
+                        <h2 class="section-title" data-i18n="latest-patch-title">Últimas <span
+                                class="highlight">Notas</span></h2>
                     </div>
                     <a href="patch-notes.html" class="patch-view-all" data-i18n="patch-view-all">Ver todas</a>
                 </div>
 
-                <div class="patch-grid">
-                    <article class="patch-card reveal-item">
-                        <span class="patch-type" data-i18n="patch-card1-type">Balance</span>
-                        <h3 data-i18n="patch-card1-title">Pilotos más ágiles en combate</h3>
-                        <p data-i18n="patch-card1-copy">Reducimos la recuperación tras impactos y aumentamos la respuesta en giros cerrados.</p>
-                        <time data-i18n="patch-card1-date">2 de mayo de 2026</time>
+                <div class="news-grid">
+                    <article class="news-card news-card--large reveal-item">
+                        <div class="news-card-img">
+                            <img src="breakway.png" alt="Patch art" loading="lazy">
+                            <div class="news-card-overlay"></div>
+                        </div>
+                        <div class="news-card-body">
+                            <span class="patch-type" data-i18n="patch-card1-type">Balance</span>
+                            <h3 data-i18n="patch-card1-title">Pilotos más ágiles en combate</h3>
+                            <p data-i18n="patch-card1-copy">Reducimos la recuperación tras impactos y aumentamos la
+                                respuesta en giros cerrados.</p>
+                            <time data-i18n="patch-card1-date">2 de mayo de 2026</time>
+                        </div>
                     </article>
-                    <article class="patch-card reveal-item">
-                        <span class="patch-type" data-i18n="patch-card2-type">Mapa</span>
-                        <h3 data-i18n="patch-card2-title">Distrito Central recibe atajos</h3>
-                        <p data-i18n="patch-card2-copy">Se abren accesos laterales para persecuciones más agresivas y remontadas de último segundo.</p>
-                        <time data-i18n="patch-card2-date">25 de abril de 2026</time>
+                    <article class="news-card reveal-item">
+                        <div class="news-card-img">
+                            <img src="sneaky.png" alt="Map art" loading="lazy">
+                            <div class="news-card-overlay"></div>
+                        </div>
+                        <div class="news-card-body">
+                            <span class="patch-type" data-i18n="patch-card2-type">Mapa</span>
+                            <h3 data-i18n="patch-card2-title">Distrito Central recibe atajos</h3>
+                            <p data-i18n="patch-card2-copy">Se abren accesos laterales para persecuciones más agresivas
+                                y remontadas de último segundo.</p>
+                            <time data-i18n="patch-card2-date">25 de abril de 2026</time>
+                        </div>
                     </article>
-                    <article class="patch-card reveal-item">
-                        <span class="patch-type" data-i18n="patch-card3-type">Sistema</span>
-                        <h3 data-i18n="patch-card3-title">Recompensas de escuadrón</h3>
-                        <p data-i18n="patch-card3-copy">Las asistencias, bloqueos y objetivos compartidos ahora suman más progreso para todo el equipo.</p>
-                        <time data-i18n="patch-card3-date">18 de abril de 2026</time>
+                    <article class="news-card reveal-item">
+                        <div class="news-card-img">
+                            <img src="welfare.png" alt="System art" loading="lazy">
+                            <div class="news-card-overlay"></div>
+                        </div>
+                        <div class="news-card-body">
+                            <span class="patch-type" data-i18n="patch-card3-type">Sistema</span>
+                            <h3 data-i18n="patch-card3-title">Recompensas de escuadrón</h3>
+                            <p data-i18n="patch-card3-copy">Las asistencias, bloqueos y objetivos compartidos ahora
+                                suman más progreso para todo el equipo.</p>
+                            <time data-i18n="patch-card3-date">18 de abril de 2026</time>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
 
+        <!-- ─── CTA ─── -->
         <section id="cta">
             <div class="container cta-box reveal-item">
                 <h2 data-i18n="cta-h2">¿Listo para el desafío?</h2>
-                <p data-i18n="cta-p">Únete a miles de pilotos y demuestra quién es el rey de la carretera.</p>
-                <a href="#" class="btn-primary btn-large" data-i18n="cta-btn">Únete a la Beta</a>
+                <p data-i18n="cta-p">Únete a miles de pilotos y demuestra quién es el rey de la arena.</p>
+                <a href="download.html" class="btn-primary btn-large" data-i18n="cta-btn">Únete a la Beta</a>
             </div>
         </section>
     </main>
 
+    <!-- ─── FOOTER ─── -->
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
                 <img src="logo.png" alt="Rearview Logo">
             </div>
-            <p data-i18n="footer-copy">&copy; 2025 Rearview Games. Todos los derechos reservados.</p>
             <div class="social-links">
-                <a href="#" aria-label="Twitter" class="social-icon">
+                <a href="https://x.com/RearviewGame" target="_blank" rel="noopener" aria-label="X / Twitter"
+                    class="social-icon">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
-                <a href="#" aria-label="Discord" class="social-icon">
+                <a href="https://discord.gg/JERPPjzKcg" target="_blank" rel="noopener" aria-label="Discord"
+                    class="social-icon">
                     <i class="fa-brands fa-discord"></i>
                 </a>
-                <a href="#" aria-label="YouTube" class="social-icon">
+                <a href="https://www.youtube.com/@RearviewGame" target="_blank" rel="noopener" aria-label="YouTube"
+                    class="social-icon">
                     <i class="fa-brands fa-youtube"></i>
                 </a>
-                <a href="#" aria-label="Gamejolt" class="social-icon">
-                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                        style="width: 1em; height: 1em;">
-                        <title>Game Jolt</title>
-                        <path
-                            d="M6.353 0v2.824H4.94v2.823H3.53v2.824H2.118v2.823H.706v2.824h8.47v2.823H7.765v2.824H6.353v2.823h1.412v-1.412h1.411v-1.411h1.412v-1.412H12V16.94h1.412v-1.41h1.412v-1.411h1.411v-1.412h1.412v-1.412h1.412V9.882h1.412V8.471h1.411V7.059h-4.235V5.647h1.412V4.235h1.412V2.824h1.411V1.412h1.412V0zm0 22.588H4.94V24h1.412zM7.765 2.824h9.882v1.411h-1.412v1.412h-1.411V7.06h-1.412v1.41H12v1.411h1.412v1.412H12V9.882h-1.412v1.412H9.176V9.882H7.765v1.412H6.353V9.882H4.94V8.471h1.412V5.647h1.412zM6.353 8.47v1.411h1.412v-1.41zm2.823 1.411h1.412v-1.41H9.176zm5.648 0h1.411v1.412h-1.411Z" />
-                    </svg>
-                </a>
             </div>
+            <p data-i18n="footer-copy">&copy; 2025 Rearview Games. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Hero particles
+        (function () {
+            const container = document.getElementById('heroParticles');
+            if (!container) return;
+            for (let i = 0; i < 30; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'particle';
+                dot.style.cssText = `
+                    left:${Math.random() * 100}%;
+                    top:${Math.random() * 100}%;
+                    width:${2 + Math.random() * 3}px;
+                    height:${2 + Math.random() * 3}px;
+                    animation-delay:${Math.random() * 6}s;
+                    animation-duration:${4 + Math.random() * 8}s;
+                `;
+                container.appendChild(dot);
+            }
+        })();
+
+        // Scroll-based header transparency
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 80);
+        });
+
+        // Intersection observer for reveal-item
+        const revealItems = document.querySelectorAll('.reveal-item');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('revealed');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        revealItems.forEach(el => observer.observe(el));
+    </script>
 </body>
 
 </html>

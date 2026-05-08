@@ -67,28 +67,39 @@ document.addEventListener('DOMContentLoaded', () => {
             "nav-universe": "Universe",
             "nav-drivers": "Drivers",
             "nav-patch-notes": "Patch Notes",
+            "nav-support": "<i class='fa-solid fa-heart'></i> Support us",
             "nav-play": "Play Now",
-            "hero-tagline": "TEAM ACTION • FREE",
-            "hero-download": "Download Free",
+            "hero-tagline": "ARENA SHOOTER • VEHICULAR COMBAT",
+            "hero-download": "Download Now",
             "hero-more": "See More",
-            "features-title": "Master <span class=\"highlight\">the Track</span>",
+            "scroll-hint": "Scroll Down",
+            "spotlight-eyebrow": "Current Season",
+            "spotlight-h2": "Enter the <span class=\"highlight\">Arena</span>",
+            "spotlight-h3": "Ready for Combat",
+            "spotlight-p": "Compete against drivers from around the world in the Rearview closed beta. Choose your driver, dominate the arena, and prove who's in charge.",
+            "spotlight-btn1": "Download Beta",
+            "spotlight-btn2": "Patch Notes",
+            "features-title": "Dominate <span class=\"highlight\">the Arena</span>",
             "feat1-h3": "Arcade <span>Physics</span>",
-            "feat1-p": "Drive on the edge with instant controls, exaggerated drifts, and races that are easy to learn but hard to master.",
+            "feat1-p": "Drive on the edge with instant controls, exaggerated drifts, and combat that is easy to learn but hard to master.",
             "feat2-h3": "Frenetic <span>Matches</span>",
-            "feat2-p": "Every race mixes speed, collisions, and fast decisions to keep the action burning hot.",
+            "feat2-p": "Every match mixes speed, collisions, and fast decisions to keep the action burning hot.",
             "feat3-h3": "Charismatic <span>Characters</span>",
-            "feat3-p": "Choose drivers with distinct personalities, recognizable styles, and an attitude ready to ignite the track.",
+            "feat3-p": "Choose drivers with distinct personalities, recognizable styles, and an attitude ready to ignite the arena.",
+            "badge-factions": "Factions",
             "factions-h2": "Join a <span class=\"highlight\">Faction</span>",
             "factions-h3": "Choose Your Side",
-            "factions-p": "Align with one of three elite racing factions. Each team offers unique advantages, exclusive vehicle skins, and special abilities. Compete for dominance and prove your faction's superiority on the leaderboards.",
+            "factions-p": "Align with one of three elite combat factions. Each team offers unique advantages, exclusive vehicle skins, and special abilities. Compete for dominance and prove your faction's superiority on the leaderboards.",
             "factions-btn": "EXPLORE FACTIONS",
+            "badge-drivers": "Drivers",
             "drivers-h2": "Meet Your <span class=\"highlight\">Drivers</span>",
-            "drivers-h3": "Every Racer Has a Story",
-            "drivers-p": "Choose from a diverse roster of skilled drivers, each with unique personalities, backgrounds, and special racing techniques. Master their abilities and dominate the competition with style.",
+            "drivers-h3": "Every Driver Has a Story",
+            "drivers-p": "Choose from a diverse roster of skilled drivers, each with unique personalities, backgrounds, and special combat techniques. Master their abilities and dominate the competition with style.",
             "drivers-btn": "VIEW ALL DRIVERS",
-            "maps-h2": "Dive into the <span class=\"highlight\">Maps</span>",
-            "maps-h3": "Race Across the World",
-            "maps-p": "Every track is a battleground designed to test your creativity and skill. From neon-lit cityscapes to treacherous mountain passes, each map offers unique challenges and spectacular moments you'll never forget.",
+            "badge-maps": "Arenas",
+            "maps-h2": "Dive into the <span class=\"highlight\">Arenas</span>",
+            "maps-h3": "Combat Across the World",
+            "maps-p": "Every arena is a battleground designed to test your creativity and skill. From neon-lit cityscapes to treacherous mountain passes, each map offers unique challenges and spectacular moments you'll never forget.",
             "maps-btn": "SEE ALL MAPS",
             "patch-eyebrow": "Updates",
             "latest-patch-title": "Latest <span class=\"highlight\">Notes</span>",
@@ -125,9 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "patch-card6-copy": "New visual alerts help identify attacks, assists, and active objectives.",
             "patch-card6-date": "March 28, 2026",
             "cta-h2": "Ready for the challenge?",
-            "cta-p": "Join thousands of drivers and prove who is the king of the road.",
+            "cta-p": "Join thousands of drivers and prove who is the king of the arena.",
             "cta-btn": "Join the Beta",
             "footer-copy": "&copy; 2025 Rearview Games. All rights reserved.",
+            "label-related": "RELATED DRIVERS",
             "drivers-title": "SELECT YOUR <span class=\"highlight\">DRIVER</span>",
             "drivers-subtitle": "THE ASPHALT AWAITS YOUR LEGACY",
             "filter-btn": "FILTER",
@@ -193,34 +205,53 @@ document.addEventListener('DOMContentLoaded', () => {
             "detail-makoto-li2": "More aggressive mobility.",
             "detail-makoto-li3": "Superior maneuverability.",
             "detail-makoto-li4": "Greater risk in direct fights.",
-            "detail-vehicles-p2": "The arrival of motorcycles opens new possibilities for future mechanics and playstyles."
+            "detail-vehicles-p2": "The arrival of motorcycles opens new possibilities for future mechanics and playstyles.",
+            "support-title": "SUPPORT THE <span class=\"highlight\">PROJECT</span>",
+            "support-subtitle": "HELP US GROW AND IMPROVE THE GAME",
+            "support-p1": "Rearview is a project driven by passion. Your contributions directly help us maintain high-performance servers, improve gameplay mechanics, and develop new content for our community.",
+            "support-btn": "Buy us a Ko-fi",
+            "download-title": "READY TO <span class=\"highlight\">DRIVE?</span>",
+            "download-p": "Get the Bytepunk Client and join the Closed Beta. NovaTerra awaits its next champion.",
+            "download-btn-text": "Download Bytepunk Client",
+            "download-status-msg": "Your download will start in a few seconds..."
         },
         es: {
             "nav-universe": "Universo",
             "nav-drivers": "Pilotos",
             "nav-patch-notes": "Notas del Parche",
+            "nav-support": "<i class='fa-solid fa-heart'></i> Apóyanos",
             "nav-play": "Jugar Ahora",
-            "hero-tagline": "ACCION EN EQUIPO • GRATIS",
-            "hero-download": "Descargar Gratis",
+            "hero-tagline": "ARENA SHOOTER • COMBATE VEHICULAR",
+            "hero-download": "Descargar Ahora",
             "hero-more": "Ver Más",
-            "features-title": "Domina <span class=\"highlight\">la Pista</span>",
+            "scroll-hint": "Desplázate",
+            "spotlight-eyebrow": "Temporada Actual",
+            "spotlight-h2": "Entra en la <span class=\"highlight\">Arena</span>",
+            "spotlight-h3": "Listo para el Combate",
+            "spotlight-p": "Compite contra pilotos de todo el mundo en la beta cerrada de Rearview. Elige tu piloto, domina la arena y demuestra quién manda.",
+            "spotlight-btn1": "Descargar Beta",
+            "spotlight-btn2": "Notas del Parche",
+            "features-title": "Domina <span class=\"highlight\">la Arena</span>",
             "feat1-h3": "Fisica <span>Arcade</span>",
-            "feat1-p": "Conduce al limite con controles inmediatos, derrapes exagerados y carreras faciles de aprender pero dificiles de dominar.",
+            "feat1-p": "Conduce al limite con controles inmediatos, derrapes exagerados y combates faciles de aprender pero dificiles de dominar.",
             "feat2-h3": "Partidas <span>Freneticas</span>",
-            "feat2-p": "Cada carrera mezcla velocidad, choques y decisiones rapidas para mantener la accion siempre al rojo vivo.",
+            "feat2-p": "Cada combate mezcla velocidad, choques y decisiones rapidas para mantener la accion siempre al rojo vivo.",
             "feat3-h3": "Personajes <span>Carismaticos</span>",
-            "feat3-p": "Elige pilotos con personalidad propia, estilos reconocibles y una actitud lista para encender la pista.",
+            "feat3-p": "Elige pilotos con personalidad propia, estilos reconocibles y una actitud lista para encender la arena.",
+            "badge-factions": "Facciones",
             "factions-h2": "Únete a una <span class=\"highlight\">Facción</span>",
             "factions-h3": "Elige Tu Bando",
-            "factions-p": "Alíate con una de las tres facciones de élite. Cada equipo ofrece ventajas únicas, diseños de vehículos exclusivos y habilidades especiales. Compite por el dominio y demuestra la superioridad de tu facción.",
+            "factions-p": "Alíate con una de las tres facciones de combate. Cada equipo ofrece ventajas únicas, diseños de vehículos exclusivos y habilidades especiales. Compite por el dominio y demuestra la superioridad de tu facción.",
             "factions-btn": "EXPLORAR FACCIONES",
+            "badge-drivers": "Pilotos",
             "drivers-h2": "Conoce a tus <span class=\"highlight\">Pilotos</span>",
-            "drivers-h3": "Cada Corredor Tiene una Historia",
-            "drivers-p": "Elige entre un elenco diverso de pilotos experimentados, cada uno con personalidades, orígenes y técnicas de carrera únicas. Domina sus habilidades y vence a la competencia con estilo.",
+            "drivers-h3": "Cada Piloto Tiene una Historia",
+            "drivers-p": "Elige entre un elenco diverso de pilotos experimentados, cada uno con personalidades, orígenes y técnicas de combate únicas. Domina sus habilidades y vence a la competencia con estilo.",
             "drivers-btn": "VER TODOS LOS PILOTOS",
-            "maps-h2": "Sumérgete en los <span class=\"highlight\">Mapas</span>",
-            "maps-h3": "Compite por todo el Mundo",
-            "maps-p": "Cada pista es un campo de batalla diseñado para poner a prueba tu creatividad y destreza. Desde ciudades con luces de neón hasta peligrosos pasos de montaña, cada mapa ofrece desafíos únicos.",
+            "badge-maps": "Arenas",
+            "maps-h2": "Sumérgete en las <span class=\"highlight\">Arenas</span>",
+            "maps-h3": "Combate por todo el Mundo",
+            "maps-p": "Cada arena es un campo de batalla diseñado para poner a prueba tu creatividad y destreza. Desde ciudades con luces de neón hasta peligrosos pasos de montaña, cada mapa ofrece desafíos únicos.",
             "maps-btn": "VER TODOS LOS MAPAS",
             "patch-eyebrow": "Actualizaciones",
             "latest-patch-title": "Últimas <span class=\"highlight\">Notas</span>",
@@ -257,9 +288,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "patch-card6-copy": "Nuevos avisos visuales ayudan a identificar ataques, asistencias y objetivos activos.",
             "patch-card6-date": "28 de marzo de 2026",
             "cta-h2": "¿Listo para el desafío?",
-            "cta-p": "Únete a miles de pilotos y demuestra quién es el rey de la carretera.",
+            "cta-p": "Únete a miles de pilotos y demuestra quién es el rey de la arena.",
             "cta-btn": "Únete a la Beta",
             "footer-copy": "&copy; 2025 Rearview Games. Todos los derechos reservados.",
+            "label-related": "DRIVERS RELACIONADOS",
             "drivers-title": "SELECCIONA TU <span class=\"highlight\">PILOTO</span>",
             "drivers-subtitle": "EL ASFALTO ESPERA TU LEGADO",
             "filter-btn": "FILTRAR",
@@ -325,34 +357,53 @@ document.addEventListener('DOMContentLoaded', () => {
             "detail-makoto-li2": "Movilidad mas agresiva.",
             "detail-makoto-li3": "Maniobrabilidad superior.",
             "detail-makoto-li4": "Mayor riesgo en enfrentamientos directos.",
-            "detail-vehicles-p2": "La llegada de motocicletas abre nuevas posibilidades para futuras mecanicas y estilos de juego."
+            "detail-vehicles-p2": "La llegada de motocicletas abre nuevas posibilidades para futuras mecanicas y estilos de juego.",
+            "support-title": "APOYA EL <span class=\"highlight\">PROYECTO</span>",
+            "support-subtitle": "AYÚDANOS A CRECER Y MEJORAR EL JUEGO",
+            "support-p1": "Rearview es un proyecto impulsado por la pasión. Tus contribuciones nos ayudan directamente a mantener servidores de alto rendimiento, mejorar las mecánicas de juego y desarrollar nuevo contenido para nuestra comunidad.",
+            "support-btn": "Apóyanos en Ko-fi",
+            "download-title": "¿LISTO PARA <span class=\"highlight\">CONDUCIR?</span>",
+            "download-p": "Obtén el Cliente Bytepunk y únete a la Beta Cerrada. NovaTerra espera a su próximo campeón.",
+            "download-btn-text": "Download Bytepunk Client",
+            "download-status-msg": "La descarga iniciará en unos segundos..."
         },
         ja: {
             "nav-universe": "ユニバース",
             "nav-drivers": "ドライバー",
             "nav-patch-notes": "パッチノート",
+            "nav-support": "<i class='fa-solid fa-heart'></i> サポート",
             "nav-play": "今すぐプレイ",
-            "hero-tagline": "チームアクション • 無料",
-            "hero-download": "無料でダウンロード",
+            "hero-tagline": "アリーナシューター • 車両戦闘",
+            "hero-download": "今すぐダウンロード",
             "hero-more": "詳細を見る",
-            "features-title": "<span class=\"highlight\">コース</span>を制覇せよ",
+            "scroll-hint": "スクロール",
+            "spotlight-eyebrow": "現在のシーズン",
+            "spotlight-h2": "<span class=\"highlight\">アリーナ</span>へ参戦せよ",
+            "spotlight-h3": "戦闘準備完了",
+            "spotlight-p": "Rearviewクローズドベータで世界中のパイロットと競い合え。パイロットを選び、アリーナを支配し、誰がリーダーであるかを証明せよ。",
+            "spotlight-btn1": "ベータをダウンロード",
+            "spotlight-btn2": "パッチノート",
+            "features-title": "<span class=\"highlight\">アリーナ</span>を制覇せよ",
             "feat1-h3": "アーケード <span>物理演算</span>",
-            "feat1-p": "限界まで走り抜け。直感的な操作、ダイナミックなドリフト、初心者でも覚えやすく、極めるのは難しいレース。",
+            "feat1-p": "限界まで走り抜け。直感的な操作、ダイナミックなドリフト、初心者でも覚えやすく、極めるのは難しいバトル。",
             "feat2-h3": "熱狂的な <span>マッチ</span>",
-            "feat2-p": "すべてのレースがスピード、衝突、そして素早い決断の連続。アクションの熱気が途切れることはない。",
+            "feat2-p": "すべてのマッチがスピード、衝突、そして素早い決断の連続。アクションの熱気が途切れることはない。",
             "feat3-h3": "個性豊かな <span>キャラクター</span>",
-            "feat3-p": "独自の性格、特徴的なスタイル、そしてコースを沸かせる熱い志を持ったドライバーたちを選べ。",
+            "feat3-p": "独自の性格、特徴的なスタイル、そしてアリーナを沸かせる熱い志を持ったパイロットたちを選べ。",
+            "badge-factions": "派閥",
             "factions-h2": "<span class=\"highlight\">派閥</span>に参加せよ",
             "factions-h3": "自分の陣営を選べ",
-            "factions-p": "3つのエリートレース派閥のいずれかと提携せよ。各チームは独自の利点、限定車両スキン、特殊能力を提供。支配権を争い、リーダーボードで派閥の優位性を証明せよ。",
+            "factions-p": "3つのエリート戦闘派閥のいずれかと提携せよ。各チームは独自の利点、限定車両スキン、特殊能力を提供。支配権を争い、リーダーボードで派閥の優位性を証明せよ。",
             "factions-btn": "派閥を探索する",
-            "drivers-h2": "<span class=\"highlight\">ドライバー</span>紹介",
-            "drivers-h3": "すべてのレーサーには物語がある",
-            "drivers-p": "独自の性格、背景、特殊なレーステクニックを持つ多様な熟練ドライバーから選べ。彼らの能力をマスターし、スタイリッシュに競争を支配せよ。",
-            "drivers-btn": "すべてのドライバーを見る",
-            "maps-h2": "<span class=\"highlight\">マップ</span>を走破せよ",
-            "maps-h3": "世界中を駆け巡るレース",
-            "maps-p": "すべてのトラックは、君の創造性とスキルを試す戦場だ。ネオン輝く街並みから険しい峠まで、各マップは忘れられないユニークな挑戦と壮大な瞬間を提供する。",
+            "badge-drivers": "パイロット",
+            "drivers-h2": "<span class=\"highlight\">パイロット</span>紹介",
+            "drivers-h3": "すべてのパイロットには物語がある",
+            "drivers-p": "独自の性格、背景、特殊な戦闘テクニックを持つ多様な熟練パイロットから選べ。彼らの能力をマスターし、スタイリッシュに競争を支配せよ。",
+            "drivers-btn": "すべてのパイロットを見る",
+            "badge-maps": "アリーナ",
+            "maps-h2": "<span class=\"highlight\">アリーナ</span>を走破せよ",
+            "maps-h3": "世界中を駆け巡るバトル",
+            "maps-p": "すべてのアリーナは、君の創造性とスキルを試す戦場だ。ネオン輝く街並みから険しい峠まで、各マップは忘れられないユニークな挑戦と壮大な瞬間を提供する。",
             "maps-btn": "すべてのマップを見る",
             "patch-eyebrow": "アップデート",
             "latest-patch-title": "最新の <span class=\"highlight\">ノート</span>",
@@ -361,12 +412,12 @@ document.addEventListener('DOMContentLoaded', () => {
             "patch-back-home": "ホームに戻る",
             "patch-feature-type": "BETA DEVELOPMENT",
             "patch-feature-title": "進化し続けるベータ",
-            "patch-feature-copy": "新しいメカニクス、ゲームプレイの改善、そして将来の拡張に向けた土台を作るコンテンツ。",
+            "patch-feature-copy": "新しいメカニクス、ゲームプレイの改善、および将来の拡張に向けた土台を作るコンテンツ。",
             "patch-feature-date": "2026年5月7日",
             "patch-read-more": "続きを読む",
             "patch-card1-type": "マップ",
             "patch-card1-title": "サミットバレー",
-            "patch-card1-copy": "別ルート、転送ポータル、そしてよりダイナミックな戦闘を備えた廃墟の郊外。",
+            "patch-card1-copy": "別ルート、転送ポータル、およびよりダイナミックな戦闘を備えた廃墟の郊外。",
             "patch-card1-date": "2026年5月7日",
             "patch-card2-type": "バランス",
             "patch-card2-title": "戦闘中の機動性が向上",
@@ -378,7 +429,7 @@ document.addEventListener('DOMContentLoaded', () => {
             "patch-card3-date": "2026年5月7日",
             "patch-card4-type": "車両",
             "patch-card4-title": "Makotoが参戦",
-            "patch-card4-copy": "ビジュアルの改善、ドライバーの最適化、刻々と変化する環境に応じたMakotoの初登場。",
+            "patch-card4-copy": "ビジュアルの改善、パイロットの最適化、刻々と変化する環境に応じたMakotoの初登場。",
             "patch-card4-date": "2026年5月7日",
             "patch-card5-type": "車両",
             "patch-card5-title": "軽量シャシーのアップグレード",
@@ -389,9 +440,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "patch-card6-copy": "攻撃、アシスト、アクティブな目標を識別しやすくする新しい視覚アラート。",
             "patch-card6-date": "2026年3月28日",
             "cta-h2": "挑戦する準備はできているか？",
-            "cta-p": "何千人ものドライバーと一緒に、誰が道の王であるかを証明せよ。",
+            "cta-p": "何千人ものパイロットと一緒に、誰がアリーナの王であるかを証明せよ。",
             "cta-btn": "ベータに参加する",
             "footer-copy": "&copy; 2025 Rearview Games. All rights reserved.",
+            "label-related": "関連ドライバー",
             "drivers-title": "<span class=\"highlight\">ドライバー</span>を選択せよ",
             "drivers-subtitle": "アスファルトが君の伝説を待っている",
             "filter-btn": "フィルター",
@@ -457,7 +509,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "detail-makoto-li2": "よりアグレッシブな機動性。",
             "detail-makoto-li3": "優れた操作性。",
             "detail-makoto-li4": "直接戦闘における高いリスク。",
-            "detail-vehicles-p2": "オートバイの登場は、将来のメカニクスやプレイスタイルの新しい可能性を切り開きます。"
+            "detail-vehicles-p2": "オートバイの登場は、将来のメカニクスやプレイスタイルの新しい可能性を切り開きます。",
+            "support-title": "プロジェクトを<span class=\"highlight\">サポート</span>する",
+            "support-subtitle": "アリーナの成長と改善にご協力ください",
+            "support-p1": "Rearviewは情熱によって推進されているプロジェクトです。皆様のご寄付は、高性能サーバーの維持、ゲームプレイメカニクスの向上、およびコミュニティ向けの新しいコンテンツの開発に直接役立てられます。",
+            "support-btn": "Ko-fiでサポートする",
+            "download-title": "運転する準備は <span class=\"highlight\">できていますか？</span>",
+            "download-p": "Bytepunkクライアントを入手してクローズドベータに参加しましょう。ネオテラは次のチャンピオンを待っています。",
+            "download-btn-text": "Download Bytepunk Client",
+            "download-status-msg": "数秒以内にダウンロードが開始されます..."
         }
     };
 
@@ -714,86 +774,86 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Driver Overlay Logic ---
     const driversData = {
         'breakway': {
-            realName: "KAITO TANAKA",
+            realName: "RYLAN",
             alias: "BREAKWAY",
             role: "DPS",
-            origin: "NEO-TOKYO",
-            origin_es: "NEO-TOKIO",
-            origin_ja: "ネオ東京",
-            bio: "A former street racer who dominates the asphalt with calculated aggression. Known for his high-risk, high-reward drifting style that leaves opponents in the dust.",
-            bio_es: "Un ex corredor callejero que domina el asfalto con una agresión calculada. Conocido por su estilo de derrape de alto riesgo y alta recompensa.",
-            bio_ja: "計算された攻撃性でアスファルトを支配する元ストリートレーサー。対戦相手を置き去りにするハイリスク・ハイリターンのドリフトスタイルで知られる。",
+            origin: "?",
+            originCode: "",
+            bio: "Born in the industrial ruins of NovaTerra, Rylan is a rebel forged among scrap metal and illegal circuits. His life is a frantic race to discover the fate of his parents, who vanished under the shadow of Black Dawn. A clandestine runner and demolition derby pilot, he drives a machine reconstructed from stolen parts—a symbol of resistance roaring against the darkness.",
+            bio_es: "Nacido en las ruinas industriales de NovaTerra, Rylan es un rebelde forjado entre chatarra y circuitos ilegales. Su vida es una carrera frenética por descubrir el destino de sus padres, desaparecidos bajo la sombra de Black Dawn. Como corredor clandestino y piloto de demolición, conduce una máquina reconstruida con piezas robadas: un símbolo de resistencia que ruge contra la oscuridad.",
+            bio_ja: "計算された攻撃性でアリーナを支配する元ストリートファイター。対戦相手を置き去りにするハイリスク・ハイリターンの戦闘スタイルで知られる。",
             stats: { speed: 95, defense: 40, utility: 60 },
-            image: "breakway.png"
+            image: "Breakwayprofile.png",
+            related: ['sneaky']
         },
         'sneaky': {
-            realName: "SARAH JENKINS",
+            realName: "ASTRID SOLBERG",
             alias: "SNEAKY",
             role: "DPS",
-            origin: "CHICAGO",
-            origin_es: "CHICAGO",
-            origin_ja: "シカゴ",
-            bio: "A master of stealth and precision. She strikes when least expected, using the track's blind spots to her advantage to overtake rivals instantly.",
-            bio_es: "Una maestra del sigilo y la precisión. Ataca cuando menos se lo espera, utilizando los puntos ciegos de la pista para adelantar a sus rivales al instante.",
-            bio_ja: "隠密と精密のマスター。コースの死角を利用して瞬時にライバルを追い抜き、予期せぬ瞬間に攻撃を仕掛ける。",
+            origin: "Norway",
+            originCode: "no",
+            bio: "Exiled to NovaTerra as a child, Astrid grew up in the shadow of a past she never understood. Her only link to her family was a vintage Corvette Stingray her father taught her to rebuild. After his mysterious disappearance—linked to Black Dawn—she accidentally activated a biomechanical parasite that fused with her spine. Now, with the power of invisibility, she hunts the organization that stole her world.",
+            bio_es: "Exiliada a NovaTerra siendo niña, Astrid creció bajo la sombra de un pasado que nunca comprendió. Su único vínculo familiar era un Corvette Stingray que su padre le enseñó a reconstruir. Tras su misteriosa desaparición vinculada a Black Dawn, activó por error un parásito biomecánico que se fundió con su médula. Ahora, con el poder de la invisibilidad, caza a la organización que le arrebató su mundo.",
+            bio_ja: "隠密と精密のマスター。アリーナの死角を利用して瞬時にライバルを追い抜き、予期せぬ瞬間に攻撃を仕掛ける。",
             stats: { speed: 90, defense: 30, utility: 80 },
-            image: "sneaky.png"
+            image: "Sneakyprofile.png",
+            related: ['breakway', 'welfare']
         },
         'deadloader': {
-            realName: "UNIT 734",
+            realName: "ROEL HOEKSTRA",
             alias: "DEADLOADER",
             role: "TANK",
             role_ja: "タンク",
-            origin: "CYBER-WASTELAND",
-            origin_es: "CYBER-WASTELAND",
-            origin_ja: "サイバー・ウェイストランド",
-            bio: "A heavy-duty autonomous hauler reprogrammed for destruction. What it lacks in speed, it makes up for in sheer, unstoppable durability.",
-            bio_es: "Un transportador autónomo de carga pesada reprogramado para la destrucción. Lo que le falta en velocidad, lo compensa con una durabilidad pura e imparable.",
+            origin: "Netherlands",
+            originCode: "nl",
+            bio: "Leader of 'The Stompers', Roel commands a band of urban mercenaries hiding their criminality behind security contracts. He embodies the classic rugged biker, but his mount is an engineering aberration: a militarized Front-End Loader. After a brutal betrayal, he turned his beast of steel into an extension of his fury. They say the loader's bucket 'speaks' through the crushed metal of those who sold secrets to Black Dawn.",
+            bio_es: "Líder de 'Los Stompers', Roel comanda una banda de mercenarios urbanos que ocultan su criminalidad tras contratos de seguridad. Encarna al rudo motorista clásico, pero su montura es una aberración de ingeniería: un Front-End Loader militarizado. Tras una traición, convirtió a su bestia de acero en una extensión de su furia. Dicen que la pala de su cargadora 'habla' a través del metal retorcido de quienes vendieron secretos a Black Dawn.",
             bio_ja: "破壊のために再プログラムされた重量級の自律型運搬機。スピードの欠如を、圧倒的で止められない耐久性で補っている。",
             stats: { speed: 50, defense: 98, utility: 40 },
-            image: "deadloader.png"
+            image: "Deadloaderprofile.png",
+            related: ['sprayer', 'breakway']
         },
         'juggernaut': {
-            realName: "MARCUS STEEL",
+            realName: "ISABEL RODRÍGUEZ",
             alias: "JUGGERNAUT",
             role: "TANK",
             role_ja: "タンク",
-            origin: "BERLIN",
-            origin_es: "BERLÍN",
-            origin_ja: "ベルリン",
-            bio: "An indestructible force on the track. Marcus uses his fortified chassis to push through blockades and clear the path for his team.",
-            bio_es: "Una fuerza indestructible en la pista. Marcus utiliza su chasis fortificado para atravesar bloqueos y despejar el camino para su equipo.",
-            bio_ja: "コース上の不滅の力。マーカスは強化されたシャシーを使用して封鎖を突き破り、チームのために道を切り開く。",
+            origin: "Colombia",
+            originCode: "co",
+            bio: "Hired by Black Dawn to escort high-value Aureon shipments, Isabel is a Cybrid: an illegal fusion of flesh and metal. Capable of transforming her arms into living weapons, her true power is unleashed behind the wheel of her militarized Semi Truck. Thanks to her implants, she can physically integrate with the vehicle, becoming an impenetrable iron titan. She doesn't just drive a war machine; she IS the machine.",
+            bio_es: "Contratada por Black Dawn para escoltar cargamentos de Aureon, Isabel es una Cybrid: una fusión ilegal de carne y metal. Capaz de transformar sus brazos en armas vivas, su verdadera potencia se desata al volante de su Semi Truck militarizado. Gracias a sus implantes, puede integrarse físicamente con el vehículo, convirtiéndose en un titán de hierro impenetrable. Ella no conduce una máquina de guerra; ella ES la máquina.",
+            bio_ja: "アリーナ上の不滅の力。マーカスは強化されたシャシーを使用して封鎖を突き破り、チームのために道を切り開く。",
             stats: { speed: 60, defense: 90, utility: 50 },
-            image: "juggernaut.png"
+            image: "Juggernautprofile.png",
+            related: ['deadloader', 'sneaky', 'breakway']
         },
         'sprayer': {
-            realName: "ELARA VANE",
+            realName: "HANS WEISS",
             alias: "SPRAYER",
             role: "SUPPORT",
             role_ja: "サポート",
-            origin: "SEATTLE",
-            origin_es: "SEATTLE",
-            origin_ja: "シアトル",
-            bio: "Uses experimental nanotech to repair allies on the fly. Her vehicle leaves a trail of restoration particles that heal teammates following in her slipstream.",
-            bio_es: "Utiliza nanotecnología experimental para reparar aliados sobre la marcha. Su vehículo deja un rastro de partículas de restauración que curan a los compañeros.",
-            bio_ja: "実験的なナノテクノロジーを使用して、移動中に味方を修理する。彼女の車両は、スリップストリームを走るチームメイトを回復させる修復粒子の跡を残す。",
+            origin: "Switzerland",
+            originCode: "ch",
+            bio: "The most sadistic face of Black Dawn. Agent Sprayer is a military scientist whose cruelty is matched only by his genius. To him, life is a simple variable; his labs are graveyards for forbidden experiments. He drives a Porsche Carrera GT—the 'widowmaker'—modified with biotechnical injection systems and chemical weaponry. In his world, medicine doesn't heal: it only perfects destruction.",
+            bio_es: "El rostro más sádico de Black Dawn. El Agente Sprayer es un científico militar cuya crueldad solo es igualada por su genio. Para él, la vida es una simple variable; sus laboratorios son cementerios de experimentos prohibidos. Conduce un Porsche Carrera GT —el 'asesino'— modificado con sistemas de inyección biotécnica y armamento químico. En su mundo, la medicina no cura: solo perfecciona la destrucción.",
+            bio_ja: "実験的なナノテクノロジーを使用して、移動中に味方を修理する。彼女の車両は、後に続くチームメイトを回復させる修復粒子の跡を残す。",
             stats: { speed: 70, defense: 60, utility: 95 },
-            image: "sprayer.png"
+            image: "Sprayerprofile.png",
+            related: ['breakway', 'sneaky', 'deadloader', 'juggernaut', 'welfare']
         },
         'welfare': {
-            realName: "DR. ARIN THORNE",
+            realName: "YUN MING",
             alias: "WELFARE",
             role: "SUPPORT",
             role_ja: "サポート",
-            origin: "LONDON",
-            origin_es: "LONDRES",
-            origin_ja: "ロンドン",
-            bio: "A combat medic who turned the racetrack into a triage unit. Specialized in defensive shielding and emergency repairs during high-speed collisions.",
-            bio_es: "Un médico de combate que convirtió la pista de carreras en una unidad de triaje. Especializado en escudos defensivos y reparaciones de emergencia.",
-            bio_ja: "レース場を負傷者待機所に変えたコンバットメディック。高速衝突時の防御シールドと緊急修理を専門としている。",
+            origin: "Singapore",
+            originCode: "sg",
+            bio: "A reformed Black Dawn agent who abandoned the organization after awakening to the horror of her crimes. She transformed from a cold figure into a compassionate healer. Using Aureon-based technology, she modified a vintage Cadillac into a mobile sanctuary capable of repairing metal and accelerating biological healing. Now she travels the roads as a beacon of hope, hiding from the shadow that still hunts her.",
+            bio_es: "Ex-agente de Black Dawn que abandonó la organización tras despertar ante el horror de sus crímenes. Se transformó en una sanadora compasiva, modificando un Cadillac antiguo con tecnología basada en Aureon para crear un santuario móvil capaz de reparar metal y sanar heridas. Ahora recorre las carreteras como un faro de esperanza, ocultándose de la sombra que aún la persigue.",
+            bio_ja: "アリーナを負傷者待機所に変えたコンバットメディック。高速衝突時の防御シールドと緊急修理を専門としている。",
             stats: { speed: 65, defense: 70, utility: 85 },
-            image: "welfare.png"
+            image: "Welfareprofile.png",
+            related: ['sneaky']
         }
     };
 
@@ -821,9 +881,43 @@ document.addEventListener('DOMContentLoaded', () => {
         oName.textContent = data.alias;
         oRealName.textContent = data.realName;
         oRole.textContent = (activeLang === 'ja' && data.role_ja) ? data.role_ja : data.role;
-        oOrigin.textContent = data[`origin_${activeLang}`] || data.origin;
+        
+        // Origin with Flag Image fallback for Windows compatibility
+        if (data.originCode) {
+            oOrigin.innerHTML = `${data.origin} <img src="https://flagcdn.com/w40/${data.originCode}.png" class="flag-icon" alt="${data.origin}" style="height: 14px; margin-left: 8px; vertical-align: middle;">`;
+        } else {
+            oOrigin.textContent = data.origin;
+        }
+
         oBio.textContent = data[`bio_${activeLang}`] || data.bio;
         oImage.src = data.image;
+
+        // Set Cinematic Background
+        overlay.style.setProperty('--bg-url', `url('${data.image}')`);
+
+        // Populate Related Drivers
+        const relatedList = document.getElementById('related-drivers-list');
+        relatedList.innerHTML = '';
+        if (data.related) {
+            data.related.forEach(relKey => {
+                const relData = driversData[relKey];
+                if (relData) {
+                    const item = document.createElement('div');
+                    item.className = 'related-item';
+                    item.innerHTML = `
+                        <div class="related-circle">
+                            <img src="${relData.image}" alt="${relData.alias}">
+                        </div>
+                        <span>${relData.alias}</span>
+                    `;
+                    item.onclick = () => {
+                        overlay.scrollTo({ top: 0, behavior: 'smooth' });
+                        openOverlay(relKey);
+                    };
+                    relatedList.appendChild(item);
+                }
+            });
+        }
 
         // Reset bars for animation
         sSpeed.style.width = '0%';

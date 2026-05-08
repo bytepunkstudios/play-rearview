@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Us | Rearview - Arena Shooter</title>
+    <meta name="description" content="Support the Rearview project. Help us maintain servers and develop new content.">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Inter:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .support-page #support-hero {
+            padding-top: 12rem;
+            padding-bottom: 6rem;
+            background: linear-gradient(180deg, rgba(15, 25, 35, 0.7) 0%, var(--primary-color) 100%), url('maps.png') center/cover no-repeat;
+            text-align: center;
+        }
+
+        .support-content {
+            padding: 6rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .support-intro {
+            max-width: 800px;
+            margin: 0 auto 4rem;
+            text-align: center;
+        }
+
+        .support-intro h1 {
+            font-family: var(--font-header);
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            line-height: 1;
+        }
+
+        .support-intro p {
+            font-size: 1.4rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .support-cta {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 4rem;
+            text-align: center;
+            max-width: 900px;
+            width: 90%;
+            border-radius: 4px;
+            position: relative;
+        }
+
+        .support-cta::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--accent-color);
+        }
+
+        .support-cta p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            color: var(--text-secondary);
+        }
+
+        .kofi-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            background: #29abe0; /* Ko-fi Blue */
+            color: white;
+            text-decoration: none;
+            padding: 1.2rem 3rem;
+            font-weight: 700;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(41, 171, 224, 0.3);
+        }
+
+        .kofi-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(41, 171, 224, 0.5);
+            background: #2499c9;
+        }
+
+        .kofi-icon {
+            height: 28px;
+            width: auto;
+        }
+
+        .highlight {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .support-intro h1 { font-size: 3.5rem; }
+            .support-cta { padding: 2rem; }
+        }
+    </style>
+</head>
+
+<body class="support-page">
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="isotipo.png" alt="Rearview Isotipo" id="nav-logo">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#universe" data-i18n="nav-universe">Universe</a></li>
+                <li><a href="drivers.html" data-i18n="nav-drivers">Drivers</a></li>
+                <li><a href="patch-notes.html" data-i18n="nav-patch-notes">Patch Notes</a></li>
+                <li><a href="#" class="active" data-i18n="nav-support">Support us</a></li>
+                <li class="lang-selector">
+                    <button id="lang-btn" class="lang-btn" aria-label="Change Language">
+                        <i class="fa-solid fa-globe"></i>
+                        <span id="current-lang">EN</span>
+                    </button>
+                    <div id="lang-dropdown" class="lang-dropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="es">Español</button>
+                        <button class="lang-option" data-lang="ja">日本語</button>
+                    </div>
+                </li>
+                <li><a href="download.html" class="btn-primary" data-i18n="nav-play">Jugar Ahora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="support-hero">
+            <div class="container">
+                <div class="support-intro reveal-text">
+                    <h1 data-i18n="support-title">SUPPORT THE <span class="highlight">PROJECT</span></h1>
+                    <p class="subtitle" data-i18n="support-subtitle">AYÚDANOS A CRECER Y MEJORAR EL JUEGO</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="support-content">
+            <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+                <div class="support-cta reveal-item">
+                    <p data-i18n="support-p1">Rearview is a project driven by passion. Your contributions directly help us maintain high-performance servers, improve gameplay mechanics, and develop new content for our community.</p>
+                    
+                    <a href="https://ko-fi.com/rearviewgame" target="_blank" class="kofi-button">
+                        <svg class="kofi-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.724c-.048 0-.067.02-.088.039-.021.02-.039.049-.039.097V19.062c0 .048.019.097.039.116.02.02.04.039.088.039h15.111c.048 0 .088-.019.117-.039.029-.02.039-.068.039-.116V16.29c1.936.038 4.267-.097 5.753-1.468 1.583-1.45 2.146-3.823 2.05-5.874zM18.828 13.782c-1.18.91-2.903.958-4.382.958h-1.422V7.126h5.803s2.964.126 3.123 3.514c.068 1.488-.068 2.292-.124 3.142zM15.408 9.537c-.503-.941-2.146-.864-2.146-.864h-1.026v4.38h1.161s1.42-.019 1.832-.864c.261-.532.223-2.112.179-2.652z"/>
+                        </svg>
+                        <span data-i18n="support-btn">Apóyanos en Ko-fi</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Rearview Logo">
+            </div>
+            <p data-i18n="footer-copy">&copy; 2025 Rearview Games. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://x.com/RearviewGame" target="_blank" rel="noopener" aria-label="X / Twitter" class="social-icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://discord.gg/JERPPjzKcg" target="_blank" rel="noopener" aria-label="Discord" class="social-icon">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="https://www.youtube.com/@RearviewGame" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

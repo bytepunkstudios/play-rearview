@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drivers | Rearview</title>
-    <meta name="description" content="Choose your driver. Dominate the track.">
+    <title>Drivers | Rearview - Arena Shooter</title>
+    <meta name="description" content="Choose your driver. Dominate the arena.">
+    <link rel="icon" type="image/png" href="icon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +29,7 @@
                 <li><a href="index.html#universe" data-i18n="nav-universe">Universe</a></li>
                 <li><a href="#" class="active" data-i18n="nav-drivers">Drivers</a></li>
                 <li><a href="patch-notes.html" data-i18n="nav-patch-notes">Patch Notes</a></li>
+                <li><a href="support.html" data-i18n="nav-support">Support us</a></li>
                 <li class="lang-selector">
                     <button id="lang-btn" class="lang-btn" aria-label="Change Language">
                         <i class="fa-solid fa-globe"></i>
@@ -39,7 +41,7 @@
                         <button class="lang-option" data-lang="ja">日本語</button>
                     </div>
                 </li>
-                <li><a href="#" class="btn-primary" data-i18n="nav-play">Jugar Ahora</a></li>
+                <li><a href="download.html" class="btn-primary" data-i18n="nav-play">Jugar Ahora</a></li>
             </ul>
         </nav>
     </header>
@@ -68,7 +70,7 @@
                             </div>
                         </div>
                     </div>
-                    <p class="subtitle fade-in-up delay-1" data-i18n="drivers-subtitle">THE ASPHALT AWAITS YOUR LEGACY</p>
+                    <p class="subtitle fade-in-up delay-1" data-i18n="drivers-subtitle">THE ARENA AWAITS YOUR LEGACY</p>
                 </div>
 
                 <div class="drivers-grid reveal-item delay-2" id="drivers-grid">
@@ -120,66 +122,6 @@
                     <!-- Dynamic stats could go here later -->
                 </div>
 
-                <!-- Driver Details Overlay -->
-                <div id="driver-overlay" class="driver-overlay">
-                    <button class="close-overlay-btn"><i class="fa-solid fa-xmark"></i></button>
-
-                    <div class="overlay-content">
-                        <div class="char-image-section">
-                            <img id="overlay-image" src="" alt="Driver Portrait">
-                        </div>
-
-                        <div class="char-info-section">
-                            <div class="char-header">
-                                <h1 id="overlay-name">NAME</h1>
-                                <h2 id="overlay-realname">REAL NAME</h2>
-                            </div>
-
-                            <div class="char-tags">
-                                <div class="char-tag">
-                                    <span class="tag-label" data-i18n="label-role">ROLE:</span>
-                                    <span id="overlay-role" class="tag-value">DPS</span>
-                                </div>
-                                <div class="char-tag">
-                                    <span class="tag-label" data-i18n="label-origin">ORIGIN:</span>
-                                    <span id="overlay-origin" class="tag-value">UNKNOWN</span>
-                                </div>
-                            </div>
-
-                            <p id="overlay-bio" class="char-bio">
-                                Character bio goes here...
-                            </p>
-
-                            <div class="char-stats">
-                                <h3 data-i18n="label-stats">DRIVER STATS</h3>
-                                <div class="stat-row">
-                                    <span class="stat-label">SPEED</span>
-                                    <div class="stat-bar-container">
-                                        <div class="stat-bar" id="stat-speed" style="width: 0%"></div>
-                                    </div>
-                                </div>
-                                <div class="stat-row">
-                                    <span class="stat-label">DEFENSE</span>
-                                    <div class="stat-bar-container">
-                                        <div class="stat-bar" id="stat-defense" style="width: 0%"></div>
-                                    </div>
-                                </div>
-                                <div class="stat-row">
-                                    <span class="stat-label">UTILITY</span>
-                                    <div class="stat-bar-container">
-                                        <div class="stat-bar" id="stat-utility" style="width: 0%"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="char-actions">
-                                <button class="action-btn primary-btn" id="view-vehicle-btn" data-i18n="btn-view-vehicle">
-                                    <i class="fa-solid fa-car"></i> VIEW VEHICLE
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
@@ -191,23 +133,83 @@
             </div>
             <p data-i18n="footer-copy">&copy; 2025 Rearview Games. Todos los derechos reservados.</p>
             <div class="social-links">
-                <a href="#" aria-label="Twitter" class="social-icon">
+                <a href="https://x.com/RearviewGame" target="_blank" rel="noopener" aria-label="X / Twitter" class="social-icon">
                     <i class="fa-brands fa-x-twitter"></i>
                 </a>
-                <a href="#" aria-label="Discord" class="social-icon">
+                <a href="https://discord.gg/JERPPjzKcg" target="_blank" rel="noopener" aria-label="Discord" class="social-icon">
                     <i class="fa-brands fa-discord"></i>
                 </a>
-                <a href="#" aria-label="YouTube" class="social-icon">
+                <a href="https://www.youtube.com/@RearviewGame" target="_blank" rel="noopener" aria-label="YouTube" class="social-icon">
                     <i class="fa-brands fa-youtube"></i>
-                </a>
-                <a href="#" aria-label="Instagram" class="social-icon">
-                    <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- Driver Details Overlay -->
+    <div id="driver-overlay" class="driver-overlay">
+        <div class="overlay-bg-gradient"></div>
+        <button class="close-overlay-btn"><i class="fa-solid fa-xmark"></i></button>
+
+        <div class="overlay-content">
+            <div class="char-image-section">
+                <img id="overlay-image" src="" alt="Driver Portrait">
+            </div>
+
+            <div class="char-info-section">
+                <div class="char-header">
+                    <h1 id="overlay-name">NAME</h1>
+                    <h2 id="overlay-realname">REAL NAME</h2>
+                </div>
+
+                <div class="char-tags">
+                    <div class="char-tag">
+                        <span class="tag-label" data-i18n="label-role">ROLE:</span>
+                        <span id="overlay-role" class="tag-value">DPS</span>
+                    </div>
+                    <div class="char-tag">
+                        <span class="tag-label" data-i18n="label-origin">ORIGIN:</span>
+                        <span id="overlay-origin" class="tag-value">UNKNOWN</span>
+                    </div>
+                </div>
+
+                <p id="overlay-bio" class="char-bio">
+                    Character bio goes here...
+                </p>
+
+                <div class="char-stats">
+                    <h3 data-i18n="label-stats">DRIVER STATS</h3>
+                    <div class="stat-row">
+                        <span class="stat-label">SPEED</span>
+                        <div class="stat-bar-container">
+                            <div class="stat-bar" id="stat-speed" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">DEFENSE</span>
+                        <div class="stat-bar-container">
+                            <div class="stat-bar" id="stat-defense" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-label">UTILITY</span>
+                        <div class="stat-bar-container">
+                            <div class="stat-bar" id="stat-utility" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="related-section">
+                    <h3 data-i18n="label-related">RELATED DRIVERS</h3>
+                    <div id="related-drivers-list" class="related-list">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
